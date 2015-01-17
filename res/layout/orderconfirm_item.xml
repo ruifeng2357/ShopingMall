@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="110px" android:id="@+id/rlItemMain" android:background="@android:color/transparent">
+    <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imgProduct" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false" android:layout_centerVertical="true" android:padding="10px"
+            android:scaleType="fitCenter"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:text="New Text"
+            android:id="@+id/txtProductDesc" android:layout_toRightOf="@+id/imgProduct"
+            android:layout_alignTop="@+id/imgProduct" android:layout_marginRight="15px" android:textSize="22px"
+            android:layout_toLeftOf="@+id/imageView" android:layout_marginLeft="10px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/OrderConfirm_Count"
+            android:id="@+id/txtProductCount" android:layout_toRightOf="@+id/imgProduct"
+            android:layout_below="@+id/txtProductDesc" android:gravity="center_vertical" android:textColor="#606060"
+            android:textSize="22px" android:layout_marginLeft="10px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_money_yuansymbol"
+              android:id="@+id/lblMoney"
+              android:gravity="center_vertical"
+              android:textColor="#ff0000" android:textSize="22px"
+              android:layout_alignParentLeft="true" android:layout_marginLeft="250px"
+              android:layout_alignBaseline="@+id/txtProductCount" android:layout_toRightOf="@+id/txtProductCount"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.90"
+            android:id="@+id/txtProductCost"
+            android:layout_below="@+id/txtProductDesc"
+            android:gravity="center_vertical"
+            android:textColor="#ff0000" android:textSize="22px"
+            android:layout_toRightOf="@+id/lblMoney" android:layout_alignBaseline="@+id/txtProductCount"/>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" android:layout_alignLeft="@+id/imgProduct"
+            android:layout_alignBottom="@+id/imgProduct" android:background="@drawable/line_separator"/>
+    <ImageView
+            android:layout_width="25px"
+            android:layout_height="20px"
+            android:id="@+id/imageView" android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false" android:scaleType="fitCenter"
+            android:src="@drawable/directionredicon" android:layout_marginRight="10px"
+            android:layout_centerVertical="true"/>
+</RelativeLayout>

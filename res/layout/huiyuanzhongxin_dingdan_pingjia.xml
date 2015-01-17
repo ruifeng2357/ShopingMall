@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="445px"
+                android:layout_height="440px" android:background="@drawable/frameback" android:paddingLeft="10px"
+                android:paddingTop="20px" android:paddingRight="10px" android:paddingBottom="20px" android:id="@+id/rlDlgMain">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_DingDan_ShangPinPingLun"
+            android:id="@+id/textView" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:textSize="22px"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110px" android:id="@+id/rlProductInfo" android:layout_below="@+id/textView"
+            android:layout_marginTop="10px">
+        <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:id="@+id/imgProduct" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false" android:layout_centerVertical="true" android:padding="10px"
+                android:scaleType="fitCenter"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:id="@+id/txtProductDesc" android:layout_toRightOf="@+id/imgProduct"
+                android:layout_alignTop="@+id/imgProduct" android:layout_marginRight="15px" android:textSize="22px"/>
+        <TextView
+                android:layout_width="75px"
+                android:layout_height="fill_parent"
+                android:text="1件"
+                android:id="@+id/txtProductCount" android:layout_toRightOf="@+id/imgProduct"
+                android:layout_below="@+id/txtProductDesc" android:gravity="center_vertical" android:textColor="#909090"
+                android:textSize="22px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$10.90"
+                android:id="@+id/txtProductCost" android:layout_toRightOf="@+id/txtProductCount"
+                android:layout_below="@+id/txtProductDesc" android:layout_alignRight="@+id/txtProductDesc"
+                android:layout_alignBottom="@+id/txtProductCount" android:gravity="center_vertical"
+                android:layout_marginLeft="5px" android:textColor="#ff0000" android:textSize="22px"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" android:layout_alignLeft="@+id/imgProduct"
+                android:layout_alignBottom="@+id/txtProductCount" android:background="@drawable/line_separator"/>
+    </RelativeLayout>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:text=""
+            android:id="@+id/edtVoteText" android:layout_alignLeft="@+id/textView"
+            android:layout_below="@+id/rlProductInfo" android:layout_marginTop="10px"
+            android:textSize="22px" android:textColor="#606060" android:gravity="left|top"
+            android:background="@drawable/edittext_back" android:padding="5px"/>
+    <com.damytech.Utils.AutoSizeRatingBar
+            android:layout_width="250px"
+            android:layout_height="48px"
+            android:id="@+id/ratingBar" android:layout_alignLeft="@+id/textView" android:layout_below="@+id/edtVoteText"
+            android:layout_marginTop="10px" android:layout_marginLeft="10px"/>
+    <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:text="5分"
+            android:id="@+id/txtRatings" android:layout_toRightOf="@+id/ratingBar" android:layout_below="@+id/edtVoteText"
+            android:layout_alignBottom="@+id/ratingBar" android:textSize="22px" android:textColor="@color/red"
+            android:gravity="center" android:layout_marginLeft="30px" android:layout_marginTop="10px"/>
+    <TextView
+            android:layout_width="117px"
+            android:layout_height="33px"
+            android:text="@string/ok"
+            android:id="@+id/txtOk" android:layout_centerHorizontal="true" android:layout_alignParentTop="false"
+            android:layout_marginBottom="10px" android:layout_alignParentBottom="true" android:gravity="center"
+            android:textColor="@color/white" android:background="@drawable/orange_btn_back_2"
+            android:textSize="22px"/>
+</RelativeLayout>

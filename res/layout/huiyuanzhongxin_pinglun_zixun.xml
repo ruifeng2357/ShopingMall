@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlHeader"
+            android:layout_alignParentBottom="false" android:layout_alignParentTop="true">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/HuiYuanZhongXin_PingLun_ZiXun_Title"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true" android:background="@drawable/titleback"
+                android:textColor="@android:color/white" android:gravity="center_vertical|left" android:paddingLeft="10px"
+                android:textSize="27px"/>
+        <TextView
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtComment" android:layout_alignRight="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:background="@drawable/gray_btn_back" android:layout_margin="5px" android:gravity="center"
+                android:text="@string/HuiYuanZhongXin_PingLun_ZiXun_PingLun" android:textColor="@color/white"
+                android:textSize="25px"/>
+    </RelativeLayout>
+
+    <com.damytech.Utils.PullToRefreshListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lstConsultings"
+            android:layout_above="@+id/rlFooter"
+            android:layout_below="@+id/rlHeader" android:background="#f3f3f3">
+    </com.damytech.Utils.PullToRefreshListView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rlEmptyMsg"
+            android:layout_above="@+id/rlFooter"
+            android:layout_below="@+id/rlHeader" android:background="#f3f3f3" android:visibility="gone">
+        <ImageView
+                android:layout_width="400px"
+                android:layout_height="400px"
+                android:id="@+id/imageView" android:layout_alignParentLeft="true" android:layout_marginLeft="40px"
+                android:layout_alignParentTop="true" android:layout_marginTop="100px" android:src="@drawable/bkerror"
+                android:scaleType="fitXY"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:id="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginLeft="190px"
+                android:layout_alignParentTop="true" android:layout_marginTop="285px" android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="285px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"
+                />
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnAccount"
+                android:layout_alignParentBottom="true" android:background="@color/orange" android:scaleType="fitCenter"
+                android:src="@drawable/personinfo" android:padding="10px" android:layout_toRightOf="@+id/imageButton6"/>
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+    </RelativeLayout>
+</RelativeLayout>

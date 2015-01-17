@@ -1,0 +1,990 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBaseServiceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="800px"
+    tools:context="com.damytech.yilebang.BaseServiceActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlBaseService_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/servicetitleback" >
+
+        <ImageView
+            android:id="@+id/imgBaseService_QRBar"
+            android:layout_width="42px"
+            android:layout_height="43px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:src="@drawable/qrbar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBaseService_Body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlBaseService_Title"
+        android:background="@color/soft_gray" android:layout_above="@+id/rlBaseService_Footer">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.damytech.Utils.HorizontalPager
+                android:id="@+id/hpBaseService_Body"
+                android:layout_width="fill_parent"
+                android:layout_height="200px" >
+            </com.damytech.Utils.HorizontalPager>
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Separatre5"
+                android:layout_width="88px"
+                android:layout_height="5px"
+                android:layout_toRightOf="@+id/rlBaseService_Separatre4"
+                android:layout_marginLeft="10px"
+                android:layout_alignTop="@+id/rlBaseService_Separatre4"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Separatre1"
+                android:layout_width="88px"
+                android:layout_height="5px"
+                android:layout_below="@+id/hpBaseService_Body"
+                android:background="@color/red" />
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Separatre2"
+                android:layout_width="88px"
+                android:layout_height="5px"
+                android:layout_toRightOf="@+id/rlBaseService_Separatre1"
+                android:layout_marginLeft="10px"
+                android:layout_alignTop="@+id/rlBaseService_Separatre1"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Separatre4"
+                android:layout_width="88px"
+                android:layout_height="5px"
+                android:layout_toRightOf="@+id/rlBaseService_Separatre3"
+                android:layout_marginLeft="10px"
+                android:layout_alignTop="@+id/rlBaseService_Separatre3"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Separatre3"
+                android:layout_width="88px"
+                android:layout_height="5px"
+                android:layout_toRightOf="@+id/rlBaseService_Separatre2"
+                android:layout_marginLeft="10px"
+                android:layout_alignTop="@+id/rlBaseService_Separatre2"
+                android:background="@color/gray" />
+            <ScrollView
+                android:id="@+id/scrlBaseService_Body"
+                android:layout_width="fill_parent"
+                android:layout_height="1345px" android:layout_marginTop="205px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlBaseService_GoodKind"
+                        android:layout_width="460px"
+                        android:layout_height="320px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15px"
+                        android:background="@drawable/frameback">
+
+                        <RelativeLayout
+                            android:id="@+id/llFunc1"
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="22px"
+                            android:background="@drawable/gray_round" >
+
+                            <ImageView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/zhuanwaikuai" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_ZhuanWaiKuai"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_ZhuanWaiKuai"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/llFunc2"
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignTop="@+id/llFunc1"
+                            android:layout_marginLeft="20px"
+                            android:layout_toRightOf="@+id/llFunc1"
+                            android:background="@drawable/gray_round" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_YiYuanKuan"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/yiyuanquan" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_YiYuanQuan"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_YiYuanQuan"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/llFunc3"
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignTop="@+id/llFunc2"
+                            android:layout_marginLeft="20px"
+                            android:layout_toRightOf="@+id/llFunc2"
+                            android:background="@drawable/gray_round" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_YouHuiJiHe"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/youhuijihe" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_YouHuiJiHe"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_YouHuiJiHe"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/llFunc4"
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignLeft="@+id/llFunc1"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="22px"
+                            android:background="@drawable/gray_round" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianChaHui"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/qianchahui" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_QianChaHui"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_QianChaHui"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/llFunc5"
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignBottom="@+id/llFunc4"
+                            android:layout_alignLeft="@+id/llFunc2"
+                            android:background="@drawable/gray_round" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianJiuHui"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/qianjiuhui" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_QianJiuHui"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_QianJiuHui"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="127px"
+                            android:layout_height="127px"
+                            android:layout_alignBottom="@+id/llFunc5"
+                            android:layout_alignLeft="@+id/llFunc3"
+                            android:layout_marginBottom="0px"
+                            android:background="@drawable/gray_round" android:id="@+id/llFunc6">
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianTeChan"
+                                android:layout_width="85px"
+                                android:layout_height="85px"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3px"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/qiantechan" />
+
+                            <TextView
+                                android:id="@+id/lblBaseService_QianTeChan"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3px"
+                                android:gravity="center"
+                                android:text="@string/BaseService_QianTeChan"
+                                android:textColor="@color/black"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+                        
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imgBaseService_ZhuanWaiKuai_Package"
+                        android:layout_width="36px"
+                        android:layout_height="37px"
+                        android:layout_alignLeft="@+id/rlBaseService_GoodKind"
+                        android:layout_below="@+id/rlBaseService_GoodKind"
+                        android:layout_marginTop="10px"
+                        android:src="@drawable/packagepic" />
+
+                    <TextView
+                        android:id="@+id/lblBaseService_ZhuanWaiKaui_GoodTitle"
+                        android:layout_width="200px"
+                        android:layout_height="30px"
+                        android:layout_alignBottom="@+id/imgBaseService_ZhuanWaiKuai_Package"
+                        android:layout_marginLeft="5px"
+                        android:layout_toRightOf="@+id/imgBaseService_ZhuanWaiKuai_Package"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/BaseService_ZhuanWaiKuaiGood"
+                        android:textColor="@color/black"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/lblBaseService_ZhuanWaiKaui_GoodDetailTitle"
+                        android:layout_width="70px"
+                        android:layout_height="30px"
+                        android:layout_alignBottom="@+id/imgBaseService_ZhuanWaiKuai_Package"
+                        android:layout_alignRight="@+id/rlBaseService_GoodKind"
+                        android:layout_marginRight="0px"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/BaseService_More"
+                        android:textColor="@color/red"
+                        android:textSize="24px" />
+                    
+                    
+                    <RelativeLayout
+                        android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame"
+                        android:layout_width="460px"
+                        android:layout_height="365px"
+                        android:layout_below="@+id/imgBaseService_ZhuanWaiKuai_Package"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/frameback">
+
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_Goods_1"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="20px"
+                            android:background="@drawable/gray_rect" >
+
+                            <ImageView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_Good_1"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/ic_stub" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_GoodPrice_1"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥6.25" />
+
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_Goods_2"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignTop="@+id/rlBaseService_ZhuanWaiKuai_Goods_1"
+                            android:layout_marginLeft="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_Goods_1"
+                            android:background="@drawable/gray_rect" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_Good_2"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/ic_stub" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_GoodPrice_2"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥615.44" />
+                            
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_Goods_3"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignTop="@+id/rlBaseService_ZhuanWaiKuai_Goods_2"
+                            android:layout_marginLeft="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_Goods_2"
+                            android:background="@drawable/gray_rect" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_Good_3"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/ic_stub" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_ZhuanWaiKuai_GoodPrice_3"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥10.25" />
+                            
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateLeft"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_below="@+id/rlBaseService_ZhuanWaiKuai_Goods_1"
+                            android:layout_marginTop="3px"
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate1"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateLeft"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateLeft"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid1"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate1"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate1"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate2"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid1"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid1"                            
+                            android:background="@drawable/selecttriangle" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid2"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate2"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate2"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate3"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid2"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateMid2"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateRight"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate3"
+                            android:layout_alignBottom="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_Separate3"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/lblBaseService_ZhuanWaiKuai_Goods_Commend"
+                            android:layout_width="440px"
+                            android:layout_height="85px"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame_SeparateLeft"
+                            android:layout_marginTop="10px"
+                            android:ellipsize="end"
+                            android:lines="3"
+                            android:textColor="@color/black"
+                            android:textSize="24px" />
+
+
+                        <TextView
+                                android:id="@+id/lblPrice_Prefix"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="15px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="15px"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:gravity="left|center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="@string/BaseService_ZhuanWaiKuai_Prefix" />
+
+                        <TextView
+                            android:id="@+id/lblBaseService_ZhuanWaiKuai_Goods_PriceValue"
+                            android:layout_width="160px"
+                            android:layout_height="30px"                            
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5px"
+                            android:layout_alignParentBottom="false"
+                            android:layout_marginBottom="15px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/red"
+                            android:textSize="24px"
+                            android:text="AAAAA"
+                            android:layout_alignTop="@+id/lblPrice_Prefix"
+                            android:layout_toRightOf="@+id/lblPrice_Prefix"/>
+
+                        <Button
+                            android:id="@+id/btnBaseService_ZhuanWaiKuai_Duplicate"
+                            android:layout_width="160px"
+                            android:layout_height="35px"
+                            android:background="@drawable/duplicatezhuanwaikuai"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="12px" />
+                        
+                        <Button
+                            android:id="@+id/btnBaseService_ZhuanWaiKuai_Share"
+                            android:layout_width="106px"
+                            android:layout_height="35px"
+                            android:background="@drawable/share"
+                            android:layout_toLeftOf="@+id/btnBaseService_ZhuanWaiKuai_Duplicate"
+                            android:layout_alignBottom="@+id/btnBaseService_ZhuanWaiKuai_Duplicate" />
+
+                    </RelativeLayout>
+                    
+                    <ImageView
+                        android:id="@+id/imgBaseService_QianCha_Package"
+                        android:layout_width="36px"
+                        android:layout_height="37px"
+                        android:layout_alignLeft="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame"
+                        android:layout_below="@+id/rlBaseService_ZhuanWaiKuai_GoodKindFrame"
+                        android:layout_marginTop="10px"
+                        android:src="@drawable/packagepic" />
+                    
+                    <TextView
+                        android:id="@+id/lblBaseService_QianCha_GoodTitle"
+                        android:layout_width="200px"
+                        android:layout_height="30px"
+                        android:layout_alignBottom="@+id/imgBaseService_QianCha_Package"
+                        android:layout_marginLeft="5px"
+                        android:layout_toRightOf="@+id/imgBaseService_QianCha_Package"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/BaseService_QianChaGood"
+                        android:textColor="@color/black"
+                        android:textSize="24px" />
+                    
+                    <TextView
+                        android:id="@+id/lblBaseService_QianCha_GoodDetailTitle"
+                        android:layout_width="70px"
+                        android:layout_height="30px"
+                        android:layout_alignBottom="@+id/imgBaseService_QianCha_Package"
+                        android:layout_alignRight="@+id/rlBaseService_GoodKind"
+                        android:layout_marginRight="0px"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/BaseService_More"
+                        android:textColor="@color/red"
+                        android:textSize="24px" />
+                        
+                    <RelativeLayout
+                        android:id="@+id/rlBaseService_QianCha_GoodKindFrame"
+                        android:layout_width="460px"
+                        android:layout_height="365px"
+                        android:layout_below="@+id/imgBaseService_QianCha_Package"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/frameback" >
+
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_Goods_1"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="20px"
+                            android:background="@drawable/gray_rect" >
+
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianCha_Good_1"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/youhuijihe" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_QianCha_GoodPrice_1"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥6.25" />
+
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_Goods_2"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignTop="@+id/rlBaseService_QianCha_Goods_1"
+                            android:layout_marginLeft="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_Goods_1"
+                            android:background="@drawable/gray_rect" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianCha_Good_2"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/youhuijihe" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_QianCha_GoodPrice_2"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥615.44" />
+                            
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_Goods_3"
+                            android:layout_width="133px"
+                            android:layout_height="165px"
+                            android:layout_alignTop="@+id/rlBaseService_QianCha_Goods_2"
+                            android:layout_marginLeft="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_Goods_2"
+                            android:background="@drawable/gray_rect" >
+                            
+                            <ImageView
+                                android:id="@+id/imgBaseService_QianCha_Good_3"
+                                android:layout_width="105px"
+                                android:layout_height="120px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10px"
+                                android:src="@drawable/youhuijihe" />
+
+                            <TextView
+                                android:id="@+id/imgBaseService_QianCha_GoodPrice_3"
+                                android:layout_width="120px"
+                                android:layout_height="30px"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5px"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="￥10.25" />
+                            
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateLeft"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_below="@+id/rlBaseService_QianCha_Goods_1"
+                            android:layout_marginTop="3px"
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_Separate1"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateLeft"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateLeft"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid1"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_Separate1"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_Separate1"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_Separate2"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid1"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid1"                            
+                            android:background="@drawable/selecttriangle" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid2"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_Separate2"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_Separate2"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_Separate3"
+                            android:layout_width="133px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid2"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateMid2"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+                        
+                        <RelativeLayout
+                            android:id="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateRight"
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:layout_toRightOf="@+id/rlBaseService_QianCha_GoodKindFrame_Separate3"
+                            android:layout_alignBottom="@+id/rlBaseService_QianCha_GoodKindFrame_Separate3"                            
+                            android:background="@drawable/grayline" >
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/lblBaseService_QianCha_Goods_Commend"
+                            android:layout_width="440px"
+                            android:layout_height="85px"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/rlBaseService_QianCha_GoodKindFrame_SeparateLeft"
+                            android:layout_marginTop="10px"
+                            android:ellipsize="end"
+                            android:lines="3"
+                            android:textColor="@color/black"
+                            android:textSize="24px" />
+
+                        <TextView
+                                android:id="@+id/lblBaseService_QianCha_Prefix"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="15px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="15px"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:gravity="left|center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="24px"
+                                android:text="@string/BaseService_TeChan_Prefix" />
+
+                        <TextView
+                            android:id="@+id/lblBaseService_QianCha_Goods_PriceValue"
+                            android:layout_width="160px"
+                            android:layout_height="30px"                            
+                            android:layout_alignParentLeft="false"
+                            android:layout_marginLeft="5px"
+                            android:layout_alignParentBottom="false"
+                            android:layout_marginBottom="15px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/red"
+                            android:textSize="24px"
+                            android:text="AAAAA" android:layout_alignTop="@+id/lblBaseService_QianCha_Prefix"
+                            android:layout_toRightOf="@+id/lblBaseService_QianCha_Prefix"/>
+						<!-- 
+                        <Button
+                            android:id="@+id/btnBaseService_QianCha_Duplicate"
+                            android:layout_width="160px"
+                            android:layout_height="35px"
+                            android:background="@drawable/duplicatezhuanwaikuai"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="12px" />
+                        
+                        <Button
+                            android:id="@+id/btnBaseService_QianCha_Share"
+                            android:layout_width="106px"
+                            android:layout_height="35px"
+                            android:background="@drawable/share"
+                            android:layout_toLeftOf="@+id/btnBaseService_QianCha_Duplicate"
+                            android:layout_alignBottom="@+id/btnBaseService_QianCha_Duplicate" />
+                         -->
+                    </RelativeLayout>
+                    
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBaseService_Footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="@color/orange" android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_gray" >
+            
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Left"
+                android:layout_width="4px"
+                android:layout_height="fill_parent" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Home"
+                android:layout_width="76px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Left"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Left"
+                android:background="@color/orange" >
+                
+                <ImageView 
+                    android:id="@+id/imgBaseService_Footer_Home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home" android:scaleType="fitCenter" android:padding="7px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Separate1"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Home"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Home"
+                android:background="@drawable/footerseparator" >
+                                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_BackArraw"
+                android:layout_width="104px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Separate1"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Separate1"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgBaseService_Footer_BackArraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/backarraw" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Separate2"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_BackArraw"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_BackArraw"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_MainMenu"
+                android:layout_width="100px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Separate2"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Separate2"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgBaseService_Footer_MainMenu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mainmenu" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Separate3"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_MainMenu"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_MainMenu"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Packet"
+                android:layout_width="90px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Separate3"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Separate3"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgBaseService_Footer_Packet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/packet" android:scaleType="fitCenter" android:padding="7px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Separate4"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_Packet"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_Packet"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_PersonInfo"
+                android:layout_width="90px"
+                android:layout_height="fill_parent"
+                android:background="@color/dark_gray" android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+                
+                <ImageView 
+                    android:id="@+id/imgBaseService_Footer_PersonInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/personinfo" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlBaseService_Footer_Right"
+                android:layout_width="4px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlBaseService_Footer_PersonInfo"
+                android:layout_alignBottom="@+id/rlBaseService_Footer_PersonInfo"
+                android:background="@color/dark_gray" >
+			</RelativeLayout>
+			            
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

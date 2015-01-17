@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="430px"
+                android:layout_height="420px" android:id="@+id/rlItemMain" android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:id="@+id/rlOrderSummary">
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="25px"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_DingDanHao"
+                android:id="@+id/textView" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:layout_marginTop="10px" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="25px"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_TiJiaoShiJian"
+                android:id="@+id/textView1" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right" android:layout_below="@+id/textView"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="25px"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_PeiSongFangShi"
+                android:id="@+id/textView2" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right" android:layout_below="@+id/textView1"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="YLB001245478"
+                android:id="@+id/txtOrderNo" android:layout_toRightOf="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:textSize="22px" android:textColor="@color/black"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2013-10-20 10:10:10"
+                android:id="@+id/txtOrderTime" android:layout_toRightOf="@+id/textView1"
+                android:layout_alignTop="@+id/textView1" android:layout_alignBottom="@+id/textView1"
+                android:textSize="22px" android:textColor="@color/black"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="付款自提"
+                android:id="@+id/txtDistMethod" android:layout_toRightOf="@+id/textView2"
+                android:layout_alignTop="@+id/textView2" android:layout_alignBottom="@+id/textView2"
+                android:textSize="22px" android:textColor="@color/black"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" android:layout_alignLeft="@+id/textView"
+                android:layout_alignParentBottom="true" android:background="@drawable/dotline_separator"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/rlProductList" android:layout_below="@+id/rlOrderSummary">
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="210px" android:id="@+id/rlNotification" android:layout_below="@+id/rlProductList">
+        <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:id="@+id/imageView3" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:layout_marginTop="10px"
+                android:background="@drawable/speakericon"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_TiShi"
+                android:id="@+id/textView9" android:layout_toRightOf="@+id/imageView3"
+                android:layout_marginTop="8px" android:textColor="@color/orange" android:layout_marginLeft="5px"
+                android:textSize="22px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_TiShi_Content"
+                android:id="@+id/txtNotification" android:layout_toRightOf="@+id/textView9"
+                android:layout_alignTop="@+id/textView9" android:layout_marginRight="10px"
+                android:layout_alignBottom="@+id/textView9" android:textSize="22px" android:textColor="@color/black"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9" android:layout_marginTop="10px" android:layout_marginLeft="5px"
+                android:layout_marginRight="5px" android:id="@+id/rlOrderHistory">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDistMethod2" android:layout_toRightOf="@+id/txtNotification"
+                android:layout_alignTop="@+id/txtNotification" android:textSize="22px" android:textColor="@color/red"
+                android:layout_marginRight="15px"/>
+    </RelativeLayout>
+</RelativeLayout>

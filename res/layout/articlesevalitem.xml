@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="150px" android:background="@color/white" android:id="@+id/rlEvaluateItemMain">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:text="AAAAAAAA"
+            android:id="@+id/txtName" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="10px" android:textColor="@color/black" android:layout_marginLeft="20px"
+            android:textSize="20px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="30px" android:text="2013-10-15 21:10:20"
+              android:id="@+id/txtDate"
+              android:textColor="@color/gray" android:layout_toRightOf="@+id/txtName"
+              android:layout_alignTop="@+id/txtName" android:layout_marginLeft="30px" android:textSize="20px"/>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar" android:layout_alignLeft="@+id/txtName" android:layout_below="@+id/txtName"
+            style="@style/customRatingBar" android:rating="3.5"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="50px" android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              android:id="@+id/txtDescription"
+              android:textColor="@color/black"
+              android:textSize="20px" android:layout_alignLeft="@+id/txtName" android:layout_below="@+id/ratingBar"
+              android:layout_marginTop="10px" android:lines="2" android:ellipsize="end"
+              android:layout_marginRight="20px" android:layout_marginBottom="5px"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:layout_below="@+id/txtDescription"
+            android:layout_marginTop="10px" android:layout_marginRight="5px" android:layout_marginLeft="5px"
+            android:background="@drawable/gray_dotline">
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain" android:background="@color/white">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="45px"
+            android:text="@string/OrderConfirm_Title"
+            android:id="@+id/textView27" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:textSize="25px" android:textColor="#ff3300" android:textStyle="bold"
+            android:gravity="center_vertical" android:paddingLeft="5px"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" android:layout_above="@+id/rlMoneyPayable"
+            android:layout_below="@+id/textView27" android:background="#f3f3f3" android:fillViewport="false">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:padding="7px">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="195px" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/frameback_2" android:id="@+id/rlReceiverInfo">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:id="@+id/textView8" android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px" android:textColor="@color/red" android:textSize="28px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_ReceiverInfo"
+                        android:id="@+id/textView9" android:layout_toRightOf="@+id/textView8"
+                        android:textSize="26px"
+                        android:layout_alignTop="@+id/textView8" android:textStyle="bold"
+                        android:layout_marginLeft="10px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_Receiver"
+                        android:id="@+id/textView10"
+                        android:layout_alignLeft="@+id/textView8" android:layout_below="@+id/textView8"
+                        android:textSize="22px" android:textColor="#666666" android:layout_marginTop="15px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/txtReceiverName"
+                        android:layout_toRightOf="@+id/textView10" android:layout_alignTop="@+id/textView10"
+                        android:textColor="#666666" android:textSize="22px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_Phone"
+                        android:id="@+id/textView12" android:layout_alignLeft="@+id/textView8"
+                        android:layout_below="@+id/textView10" android:textColor="#666666" android:textSize="22px"
+                        android:layout_marginTop="5px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/txtReceiverPhone" android:layout_toRightOf="@+id/textView12"
+                        android:layout_alignTop="@+id/textView12" android:textColor="#666666" android:textSize="22px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_Address"
+                        android:id="@+id/textView14" android:layout_alignLeft="@+id/textView8"
+                        android:layout_below="@+id/textView12" android:textSize="22px" android:textColor="#666666"
+                        android:layout_marginTop="5px"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/txtReceiverAddress" android:layout_toRightOf="@+id/textView12"
+                        android:layout_alignTop="@+id/textView14" android:textSize="22px" android:textColor="#666666"
+                        android:layout_marginRight="15px" android:lines="2" android:maxLines="2"/>
+                <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView" android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false" android:scaleType="fitCenter"
+                        android:src="@drawable/directionicon" android:layout_marginRight="10px"
+                        android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="135px" android:layout_alignLeft="@+id/rlReceiverInfo"
+                    android:layout_below="@+id/rlReceiverInfo" android:layout_marginTop="15px"
+                    android:background="@drawable/frameback_2" android:id="@+id/rlPayAndDeliveryMethod">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:id="@+id/textView16" android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px" android:textColor="@color/red" android:textSize="28px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_PayAndDeliveryMethod"
+                        android:id="@+id/textView17" android:layout_toRightOf="@+id/textView16"
+                        android:textSize="26px"
+                        android:layout_alignTop="@+id/textView16" android:textStyle="bold"
+                        android:layout_marginLeft="10px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_DeliveryMethod"
+                        android:id="@+id/textView20" android:layout_alignLeft="@+id/textView16"
+                        android:layout_below="@+id/textView17" android:textColor="#666666" android:textSize="22px"
+                        android:layout_marginTop="5px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快递"
+                        android:id="@+id/txtDeliveryMethod" android:layout_toRightOf="@+id/textView20"
+                        android:layout_alignTop="@+id/textView20" android:textColor="#666666" android:textSize="22px"/>
+                <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView1" android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false" android:scaleType="fitCenter"
+                        android:src="@drawable/directionicon" android:layout_marginRight="10px"
+                        android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_alignLeft="@+id/rlReceiverInfo"
+                    android:layout_below="@+id/rlPayAndDeliveryMethod" android:layout_marginTop="15px"
+                    android:background="@drawable/frameback_2" android:id="@+id/rlCommodityList">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:id="@+id/textView22" android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px" android:textColor="@color/red" android:textSize="28px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_CommodityList"
+                        android:id="@+id/textView23" android:layout_toRightOf="@+id/textView22"
+                        android:textSize="26px"
+                        android:layout_alignTop="@+id/textView22" android:textStyle="bold"
+                        android:layout_marginLeft="10px"/>
+                <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lstCommodity" android:layout_alignLeft="@+id/textView22"
+                        android:layout_below="@+id/textView22" android:layout_marginTop="15px"
+                        android:layout_marginRight="15px" android:layout_marginBottom="15px"
+                        android:drawSelectorOnTop="false"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="135px" android:layout_alignLeft="@+id/rlReceiverInfo"
+                    android:layout_below="@+id/rlCommodityList" android:layout_marginTop="15px"
+                    android:background="@drawable/frameback_2" android:id="@+id/rlLeaveMessage">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:id="@+id/textView24" android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px" android:textColor="@color/red" android:textSize="28px"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OrderConfirm_LeaveMessage"
+                        android:id="@+id/textView25" android:layout_toRightOf="@+id/textView24"
+                        android:textSize="26px"
+                        android:layout_alignTop="@+id/textView24" android:textStyle="bold"
+                        android:layout_marginLeft="10px"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtMessage"
+                        android:layout_alignLeft="@+id/textView24" android:layout_below="@+id/textView24"
+                        android:textSize="22px" android:textColor="#666666" android:layout_marginTop="15px"
+                        android:maxLines="2" android:lines="2" android:layout_toLeftOf="@+id/imageView2"
+                        android:layout_marginRight="10px"/>
+                <ImageView
+                        android:layout_width="25px"
+                        android:layout_height="20px"
+                        android:id="@+id/imageView2" android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false" android:scaleType="fitCenter"
+                        android:src="@drawable/directionicon" android:layout_marginRight="10px"
+                        android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105px" android:layout_above="@+id/rlFooter" android:id="@+id/rlMoneyPayable">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OrderConfirm_PayableAmount"
+                android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+                android:layout_alignParentTop="true" android:layout_marginTop="20px" android:textSize="22px"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="310.25"
+                android:id="@+id/txtMoneyToPay" android:layout_toRightOf="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:textSize="22px" android:textColor="@color/red"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OrderConfirm_CommodityPrice"
+                android:id="@+id/textView2" android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/textView" android:textSize="16px" android:textColor="#999999"
+                android:layout_marginTop="5px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="310.25"
+                android:id="@+id/txtCommodityPrice"
+                android:textSize="16px" android:textColor="@color/red"
+                android:layout_toRightOf="@+id/textView2" android:layout_alignTop="@+id/textView2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OrderConfirm_Postage"
+                android:id="@+id/textView4" android:layout_toRightOf="@+id/textView3"
+                android:layout_alignTop="@+id/textView2" android:textSize="16px" android:layout_marginLeft="15px"
+                android:textColor="#999999"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.00"
+                android:id="@+id/txtPostagePrice" android:layout_toRightOf="@+id/textView4"
+                android:layout_alignTop="@+id/textView2" android:textSize="16px" android:textColor="@color/red"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OrderConfirm_Preference"
+                android:id="@+id/textView6" android:layout_toRightOf="@+id/txtPostagePrice"
+                android:layout_alignTop="@+id/textView2" android:textSize="16px" android:textColor="#999999"
+                android:layout_marginLeft="15px" android:visibility="gone"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.00"
+                android:id="@+id/txtPreferencePrice" android:layout_toRightOf="@+id/textView6"
+                android:layout_alignTop="@+id/textView2" android:textSize="16px" android:textColor="@color/red"
+                android:visibility="gone"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_money_yuan"
+                  android:id="@+id/textView1"
+                  android:textSize="22px" android:textColor="@color/red" android:layout_toRightOf="@+id/txtMoneyToPay"
+                  android:layout_alignTop="@+id/textView"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_money_yuan"
+                  android:id="@+id/textView3" android:textSize="16px" android:textColor="@color/red"
+                  android:layout_toRightOf="@+id/txtCommodityPrice" android:layout_alignTop="@+id/textView2"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_money_yuan"
+                  android:id="@+id/textView5"
+                  android:textSize="16px" android:textColor="@color/red"
+                  android:layout_toRightOf="@+id/txtPreferencePrice" android:layout_alignTop="@+id/textView2"
+                  android:visibility="gone"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"
+                />
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+        <TextView
+                android:layout_width="185px"
+                android:layout_height="40px"
+                android:text="@string/OrderConfirm_GoToPay"
+                android:id="@+id/txtGoToPay"
+                android:layout_alignRight="@+id/imageButton6"
+                android:background="@drawable/orange_btn_back_3"
+                android:gravity="center" android:textSize="27px" android:textColor="@color/white"
+                android:layout_marginRight="15px" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

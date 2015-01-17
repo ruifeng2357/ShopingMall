@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="400px"
+                android:layout_height="270px" android:id="@+id/rlOrderDeliveryEditDlgMain" android:background="@drawable/popupdlg_back">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:text="修改配送方式"
+            android:id="@+id/txtTitle"
+            android:layout_alignTop="@+id/chkSelectItem" android:layout_marginLeft="10px"
+            android:textColor="@color/black" android:textSize="22px" android:lines="2" android:ellipsize="end"
+            android:gravity="top" android:layout_marginTop="10px"/>
+    <Button android:layout_width="120px" android:layout_height="40px" android:id="@+id/btnConfirm"
+               android:scaleType="fitXY"
+               android:background="@drawable/btn_confirm"
+               android:layout_toRightOf="@+id/txtTitle" android:layout_alignParentTop="true"
+               android:layout_marginTop="198px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送方式"
+            android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_marginLeft="30px"
+            android:layout_alignParentTop="true" android:layout_marginTop="50px"/>
+    <com.damytech.Utils.ComboBox
+            android:layout_width="340px"
+            android:layout_height="70px"
+            android:id="@+id/comboDelivery"
+            android:layout_alignLeft="@+id/textView" android:layout_below="@+id/textView"/>
+</RelativeLayout>

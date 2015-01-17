@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="445px"
+                android:layout_height="300px" android:background="@drawable/frameback" android:paddingLeft="10px"
+                android:paddingTop="20px" android:paddingRight="10px" android:paddingBottom="20px" android:id="@+id/rlDlgMain">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_JiHuoChengGong"
+            android:id="@+id/textView" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:textSize="22px"/>
+    <ImageView
+            android:layout_width="83px"
+            android:layout_height="113px"
+            android:id="@+id/imageView" android:layout_alignLeft="@+id/textView" android:layout_below="@+id/textView"
+            android:background="@drawable/bigstar_shadow" android:layout_marginTop="15px"
+            android:layout_marginLeft="20px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_GongXi"
+            android:id="@+id/textView1" android:layout_toRightOf="@+id/imageView" android:layout_alignParentTop="true"
+            android:layout_marginTop="75px" android:layout_marginLeft="10px" android:textIsSelectable="false"
+            android:textSize="22px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0122 2201 200"
+            android:id="@+id/txtGiftCardNo" android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1" android:textColor="@color/red" android:layout_marginTop="10px"
+            android:textSize="22px"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_JiHuoChengGong_2"
+            android:id="@+id/textView3" android:layout_toRightOf="@+id/txtGiftCardNo"
+            android:layout_alignTop="@+id/txtGiftCardNo" android:layout_marginLeft="10px" android:textSize="22px"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_YuEWei"
+            android:id="@+id/textView4" android:layout_alignLeft="@+id/imageView"
+            android:layout_below="@+id/imageView" android:layout_marginTop="20px" android:layout_marginLeft="10px"
+            android:textColor="#606060" android:textSize="22px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="520.00"
+            android:id="@+id/txtBalance" android:layout_toRightOf="@+id/textView4"
+            android:layout_alignTop="@+id/textView4" android:textColor="@color/red" android:textSize="22px"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_money_yuan"
+            android:id="@+id/textView6"
+            android:layout_toRightOf="@+id/txtGiftCardNo" android:layout_alignTop="@+id/textView4"
+            android:textColor="#606060" android:textSize="22px"/>
+
+    <TextView
+            android:layout_width="120px"
+            android:layout_height="43px"
+            android:text="@string/ok"
+            android:id="@+id/txtOk" android:layout_centerHorizontal="true" android:layout_alignParentTop="false"
+            android:layout_marginBottom="5px" android:layout_alignParentBottom="true" android:gravity="center"
+            android:textColor="@color/white" android:background="@drawable/orange_btn_back_2"
+            android:textSize="22px"/>
+</RelativeLayout>

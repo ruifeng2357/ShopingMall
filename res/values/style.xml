@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="NoTitleDialog" parent="android:style/Theme.Dialog">
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+<style name="NoAnimTitleTheme" parent="android:Theme.NoTitleBar">
+  <item name="android:windowAnimationStyle">@null</item>
+</style>
+
+<style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/ratingbarstar</item>
+    <item name="android:indeterminateDrawable">@drawable/ratingbarstar_intermediate</item>
+    <item name="android:minHeight">30px</item>
+    <item name="android:maxHeight">30px</item>
+</style>
+</resources>

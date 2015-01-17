@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlHeader"
+            android:layout_alignParentBottom="false" android:layout_alignParentTop="true">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_Title"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true" android:background="@drawable/titleback"
+                android:textColor="@android:color/white" android:gravity="center_vertical|left" android:paddingLeft="10px"
+                android:textSize="27px"/>
+        <TextView
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtInquire" android:layout_alignRight="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:background="@drawable/gray_btn_back" android:layout_margin="5px" android:gravity="center"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_ChaXun" android:textColor="@color/white"
+                android:textSize="25px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlBody" android:layout_below="@+id/rlHeader"
+            android:layout_above="@+id/rlFooter" android:background="#f3f3f3">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="330px"
+                android:id="@+id/imageView" android:layout_marginLeft="5px" android:layout_marginTop="10px"
+                android:layout_marginRight="5px" android:background="@drawable/frameback"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25px"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_LiPinKaJiHuo"
+                android:id="@+id/textView3" android:layout_alignLeft="@+id/imageView"
+                android:layout_alignTop="@+id/imageView" android:layout_marginLeft="15px"
+                android:layout_marginTop="20px" android:textSize="22px" android:textIsSelectable="false"/>
+
+        <TextView
+                android:layout_width="430px"
+                android:layout_height="40px"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_HaoMa"
+                android:id="@+id/textView17" android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3" android:layout_marginTop="20px"
+                android:background="@drawable/edittext_back_2_long" android:textSize="22px" android:textColor="#606060"
+                android:paddingLeft="15px" android:paddingRight="10px" android:gravity="center_vertical"
+                android:layout_marginLeft="5px"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtGiftCardNo" android:layout_alignLeft="@+id/textView17"
+                android:layout_alignTop="@+id/textView17" android:layout_alignBottom="@+id/textView17"
+                android:layout_alignRight="@+id/textView17" android:layout_marginLeft="145px" android:textSize="22px"
+                android:password="false" android:background="@android:color/transparent"
+                android:layout_marginRight="10px" android:singleLine="true"/>
+
+        <TextView
+                android:layout_width="430px"
+                android:layout_height="40px"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_MiMa"
+                android:id="@+id/textView18" android:layout_alignLeft="@+id/textView17"
+                android:layout_below="@+id/textView17" android:layout_marginTop="10px"
+                android:background="@drawable/edittext_back_2_long" android:textSize="22px" android:textColor="#606060"
+                android:paddingLeft="15px" android:paddingRight="10px" android:gravity="center_vertical"
+                />
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtGiftCardPassword" android:layout_alignLeft="@+id/textView18"
+                android:layout_alignTop="@+id/textView18" android:layout_alignBottom="@+id/textView18"
+                android:layout_alignRight="@+id/textView18" android:layout_marginLeft="145px" android:textSize="22px"
+                android:password="false" android:background="@android:color/transparent"
+                android:layout_marginRight="10px" android:singleLine="true"/>
+
+        <TextView
+                android:layout_width="430px"
+                android:layout_height="40px"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_BangDingShouJi"
+                android:id="@+id/textView19" android:layout_alignLeft="@+id/textView18"
+                android:layout_below="@+id/textView18" android:layout_marginTop="10px"
+                android:background="@drawable/edittext_back_2_long" android:textSize="22px" android:textColor="#606060"
+                android:paddingLeft="15px" android:paddingRight="10px" android:gravity="center_vertical"
+                />
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPhone" android:layout_alignLeft="@+id/textView19"
+                android:layout_alignTop="@+id/textView19" android:layout_alignBottom="@+id/textView19"
+                android:layout_marginLeft="167px" android:textSize="22px"
+                android:password="false" android:background="@android:color/transparent"
+                android:layout_marginRight="10px" android:layout_toLeftOf="@+id/txtSend"
+                android:singleLine="true"/>
+
+        <TextView
+                android:layout_width="430px"
+                android:layout_height="40px"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_YanZhengMa"
+                android:id="@+id/textView20" android:layout_alignLeft="@+id/textView19"
+                android:layout_below="@+id/textView19" android:layout_marginTop="10px"
+                android:background="@drawable/edittext_back_2_long" android:textSize="22px" android:textColor="#606060"
+                android:paddingLeft="15px" android:paddingRight="10px" android:gravity="center_vertical"
+                />
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtVerificationCode" android:layout_alignLeft="@+id/textView20"
+                android:layout_alignTop="@+id/textView20" android:layout_alignBottom="@+id/textView20"
+                android:layout_alignRight="@+id/textView20" android:layout_marginLeft="105px" android:textSize="22px"
+                android:password="false" android:background="@android:color/transparent"
+                android:layout_marginRight="10px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSend" android:layout_alignRight="@+id/textView17"
+                android:layout_alignTop="@+id/textView19" android:layout_alignBottom="@+id/textView19"
+                android:background="@drawable/orange_btn_back_4" android:gravity="center" android:textSize="22px"
+                android:textColor="@color/white" android:text="@string/send"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="285px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"
+                />
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnAccount"
+                android:layout_alignParentBottom="true" android:background="@color/orange" android:scaleType="fitCenter"
+                android:src="@drawable/personinfo" android:padding="10px" android:layout_toRightOf="@+id/imageButton6"/>
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_LiPinKa_LiJiJiHuo"
+                android:id="@+id/txtActivate"
+                android:layout_alignTop="@+id/imageButton6" android:layout_alignBottom="@+id/imageButton6"
+                android:layout_alignLeft="@+id/imageButton6" android:layout_alignRight="@+id/imageButton6"
+                android:layout_marginTop="7px" android:layout_marginBottom="7px" android:layout_marginRight="55px"
+                android:layout_marginLeft="45px" android:background="@drawable/orange_btn_back_3"
+                android:gravity="center" android:textSize="27px" android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

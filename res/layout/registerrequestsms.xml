@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRegisterRequestSMSLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginback"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestSMS_RoundNumber1"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="290px"
+        android:src="@drawable/round_redone" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestSMS_PhoneNumber"
+        android:layout_width="130px"
+        android:layout_height="30px"
+        android:layout_alignTop="@+id/imgRegisterRequestSMS_RoundNumber1"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/imgRegisterRequestSMS_RoundNumber1"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterRequestSMS_PhoneNumber"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestSMS_RoundNumber2"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignTop="@+id/lblRegisterRequestSMS_PhoneNumber"
+        android:layout_toRightOf="@+id/lblRegisterRequestSMS_PhoneNumber"
+        android:src="@drawable/round_blacktwo" />
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestSMS_RoundNumber3"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignTop="@+id/imgRegisterRequestSMS_RoundNumber2"
+        android:layout_toRightOf="@+id/lblRegisterRequestSMS_SMSVerify"
+        android:src="@drawable/round_blackthree" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestSMS_Complete"
+        android:layout_width="50px"
+        android:layout_height="30px"
+        android:layout_marginLeft="5px"
+        android:layout_alignBaseline="@+id/lblRegisterRequestSMS_SMSVerify"
+        android:layout_alignBottom="@+id/lblRegisterRequestSMS_SMSVerify"
+        android:layout_toRightOf="@+id/imgRegisterRequestSMS_RoundNumber3"
+        android:text="@string/RegisterRequestSMS_Complete"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestSMS_SMSVerify"
+        android:layout_width="90px"
+        android:layout_height="30px"
+        android:layout_alignTop="@+id/imgRegisterRequestSMS_RoundNumber3"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/imgRegisterRequestSMS_RoundNumber2"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterRequestSMS_SMSVerify"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:layout_width="105px"
+        android:layout_height="50px"
+        android:layout_alignLeft="@+id/imgRegisterRequestSMS_RoundNumber1"
+        android:layout_below="@+id/lblRegisterRequestSMS_PhoneNumber"
+        android:layout_marginTop="25px"
+        android:background="@drawable/white_little_round"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        android:gravity="center_vertical|center_horizontal" android:text="+86">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtRegisterRequestSMS_PhoneNumberBody"
+        android:layout_width="280px"
+        android:layout_height="50px"
+        android:layout_alignBaseline="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:layout_alignBottom="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:layout_marginLeft="15px"
+        android:layout_toRightOf="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:background="@drawable/white_little_round"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="24px" />
+
+    <CheckBox
+        android:id="@+id/chkRegisterRequestSMS_Agree"
+        android:layout_width="400px"
+        android:layout_height="30px"
+        android:layout_alignLeft="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:layout_below="@+id/txtRegisterRequestSMS_PhoneNumberHeader"
+        android:layout_marginTop="30px"
+        android:button="@drawable/redcheckbox"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterRequestSMS_Hint1"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestSMS_Hint"
+        android:layout_width="380px"
+        android:layout_height="25px"
+        android:layout_alignLeft="@+id/lblRegisterRequestSMS_PhoneNumber"
+        android:layout_below="@+id/chkRegisterRequestSMS_Agree"
+        android:layout_marginTop="5px"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterRequestSMS_Hint2"
+        android:textColor="@color/white"
+        android:textSize="18px" />
+
+    <Button
+        android:id="@+id/btnRegisterRequestSMS_RequestSMS"
+        android:layout_width="275px"
+        android:layout_height="70px"
+        android:layout_below="@+id/lblRegisterRequestSMS_Hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:background="@drawable/yellowbutton"
+        android:text="@string/RegisterRequestSMS_RequestSMS"
+        android:textColor="@color/white"
+        android:textSize="24px" android:enabled="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="120px" android:id="@+id/rlBasketItemMain" android:background="@color/white">
+
+    <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:id="@+id/rlLeftLayout" android:background="@color/white">
+
+
+    <CheckBox
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:id="@+id/chkSelectItem" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:button="@drawable/btn_check" android:layout_marginTop="10px" android:gravity="top"
+            android:layout_marginLeft="10px" android:checked="false"/>
+    <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:id="@+id/imgItem" android:layout_toRightOf="@+id/chkSelectItem"
+            android:layout_alignTop="@+id/chkSelectItem" android:layout_marginLeft="10px" android:src="@drawable/bmp2"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:id="@+id/txtTitle" android:layout_toRightOf="@+id/imgItem"
+            android:layout_alignTop="@+id/chkSelectItem" android:layout_marginLeft="10px"
+            android:textColor="@color/black" android:textSize="22px" android:lines="2" android:ellipsize="end"
+            android:gravity="top"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="30px"
+              android:id="@+id/txtCountHead"
+              android:textColor="@color/gray" android:textSize="20px"
+              android:ellipsize="end" android:layout_alignLeft="@+id/txtTitle"
+              android:layout_below="@+id/txtTitle" android:text="@string/Articles_Basket_Count"
+              android:layout_marginTop="10px"/>
+    <TextView
+            android:layout_width="40px"
+            android:layout_height="25px"
+            android:text="10"
+            android:id="@+id/editCount" android:layout_toRightOf="@+id/txtCountHead"
+            android:background="@drawable/basket_count" android:gravity="center"
+            android:layout_alignTop="@+id/txtCountHead" android:textSize="16px" android:textColor="@color/gray"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/str_money_yuansymbol" android:id="@+id/txtYuan" android:textColor="@color/red"
+              android:textSize="22px"
+              android:layout_toRightOf="@+id/editCount"
+              android:layout_marginLeft="20px" android:layout_alignTop="@+id/txtCountHead"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="310.25"
+              android:id="@+id/txtPrice" android:textColor="@color/red" android:textSize="22px"
+              android:layout_toRightOf="@+id/txtYuan" android:layout_alignTop="@+id/txtCountHead"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10px" android:layout_alignParentLeft="false"
+            android:layout_alignParentBottom="false" android:background="@drawable/grayline"
+            android:layout_below="@+id/txtCountHead" android:layout_marginTop="5px">
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="150px"
+            android:layout_height="110px"
+            android:id="@+id/imgDelete"
+            android:src="@drawable/btn_deletecart"
+            android:layout_alignParentLeft="false"
+            android:layout_alignBottom="@+id/txtCountHead" android:scaleType="fitXY" android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false" android:layout_marginRight="-150px"/>
+
+</RelativeLayout>

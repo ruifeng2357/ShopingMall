@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlSpecialMain">
+
+    <RelativeLayout android:id="@+id/rlTopBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                    android:background="@drawable/specialarticle">
+        <RelativeLayout android:layout_width="220px" android:layout_height="40px" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="195px" android:background="#FFFFFF" android:layout_marginTop="10px">
+            <ImageView android:layout_width="30px" android:layout_height="30px" android:id="@+id/imageView"
+                       android:layout_alignParentLeft="false" android:layout_alignParentTop="true"
+                       android:src="@drawable/findicon" android:scaleType="fitCenter" android:layout_marginLeft="5px"
+                       android:layout_marginTop="5px" android:layout_toRightOf="@+id/txtFind"/>
+            <EditText android:layout_width="170px" android:layout_height="fill_parent" android:id="@+id/txtFind"
+                      android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+                      android:layout_alignParentTop="true"
+                      android:background="@android:color/transparent" android:hint="@string/Preferential_Hint"
+                      android:textColorHint="#CCCCCC" android:textSize="18px" android:singleLine="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="42px" android:layout_height="50px" android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" android:layout_marginRight="15px"
+                        android:layout_alignParentBottom="true" android:id="@+id/rlTopListView">
+            <ImageView android:id="@+id/imgTop_ListView" android:layout_width="35px" android:layout_height="35px"
+                       android:layout_alignParentRight="false" android:src="@drawable/settingbutton"
+                       android:layout_alignParentBottom="false" android:layout_centerHorizontal="true"
+                       android:layout_marginTop="3px"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/rlTopBar"
+            android:layout_above="@+id/rlBottomBar" android:id="@+id/rlBody" android:background="@color/white">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35px" android:id="@+id/rlHeader" android:background="@color/soft_gray">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="|"
+                    android:id="@+id/txtBanner" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:gravity="center_vertical"
+                    android:layout_marginLeft="5px" android:textSize="20px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:id="@+id/txtMainCategory"
+                      android:gravity="center_vertical"
+                      android:layout_toRightOf="@+id/txtBanner" android:layout_alignTop="@+id/txtBanner"
+                      android:textColor="@color/black" android:textSize="20px" android:layout_marginLeft="5px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-"
+                      android:id="@+id/txtSlash"
+                      android:gravity="center_vertical"
+                      android:layout_toRightOf="@+id/txtMainCategory" android:layout_alignTop="@+id/txtBanner"
+                      android:textColor="@color/black" android:textSize="20px" android:layout_marginLeft="5px"
+                      android:layout_marginRight="5px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:id="@+id/txtSubCategory"
+                      android:gravity="center_vertical"
+                      android:layout_toRightOf="@+id/txtSlash" android:layout_alignTop="@+id/txtBanner"
+                      android:textSize="20px"/>
+        </RelativeLayout>
+        <com.damytech.Utils.PullToRefreshListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listArticlesView" android:layout_alignParentLeft="true" android:layout_alignParentTop="false"
+            android:layout_below="@+id/rlHeader"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlBottomBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rlBottom_Separate1" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Home"
+                        android:layout_alignBottom="@+id/rlBottom_Home"
+                        android:background="@drawable/footerseparator"/>
+        <RelativeLayout android:id="@+id/rlBottom_Packet" android:layout_width="90px"
+                        android:layout_height="fill_parent"
+                        android:background="@color/dark_gray" android:layout_alignParentRight="false"
+                        android:layout_toLeftOf="@+id/rlBottom_Separate4">
+            <ImageView android:id="@+id/imgBottom_Packet" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/packet" android:padding="7px" android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlBottom_Centre"
+                android:layout_toRightOf="@+id/rlBottom_Separate2" android:layout_toLeftOf="@+id/rlBottom_Packet"
+                android:background="@color/dark_gray">
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/specialartist_button"
+                    android:id="@+id/btnGoGoods" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px" android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px" android:background="@drawable/specialbutton"
+                    android:textColor="@color/white" android:textSize="27px"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_BackArraw" android:layout_width="104px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate1"
+                        android:layout_alignBottom="@+id/rlBottom_Separate1" android:background="@color/dark_gray">
+            <ImageView android:id="@+id/imgBottom_BackArraw" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/backarraw" android:padding="10px" android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_Separate2" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_BackArraw"
+                        android:layout_alignBottom="@+id/rlBottom_BackArraw"
+                        android:background="@drawable/footerseparator"/>
+        <RelativeLayout android:id="@+id/rlBottom_Separate4" android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/footerseparator" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

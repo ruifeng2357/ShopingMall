@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">移乐邦</string>
+    <string name="action_settings">设置</string>
+	
+    <string name="Login_UserName">用户名 :</string>
+    <string name="Login_Password">密码 :</string>
+    <string name="Login_Login">登&#160;&#160;&#160;录</string>
+    <string name="Login_Register">免费注册</string>
+    <string name="Login_Skip">跳过\>\></string>
+
+    <string name="Register_Username_Error">请输入您的用户名</string>
+    <string name="Register_Password_Error">请输入您的密码</string>
+    <string name="Register_Repassword_Error">您输入的密码不正确、请重新输入密码</string>
+
+    <string name="MSG_Success">操作成功！</string>
+    <string name="MSG_NoSel_Data">请选择商品类型</string>
+
+    <string name="MSG_NoInternet_Connection">没有网络连接</string>
+
+    <string name="RegisterRequest_InputPhoneNum">请输入您的手机号码</string>
+
+    <string name="MSG_Invalid_PhoneNum">请输入有效的电话号码</string>
+    <string name="MSG_Invalid_UserName">用户名长度为2~25位字符</string>
+
+    <string name="RegisterRequestSMS_PhoneNumber">填写手机号码</string>
+    <string name="RegisterRequestSMS_SMSVerify">用户信息</string>
+    <string name="RegisterRequestSMS_Complete">完成</string>
+    <string name="RegisterRequestSMS_Hint1">已阅读并同意使用条款和隐私政策</string>
+    <string name="RegisterRequestSMS_Hint2">移乐邦不会绑定任何，不会泄漏您的手机号。</string>
+    <string name="RegisterRequestSMS_RequestSMS">下一步</string>
+
+    <string name="RegisterRequestVerifySMS_RePassword">确认密码:</string>
+    <string name="RegisterRequestVerifySMS_SMSVerify">手机验证码:</string>
+    <string name="RegisterRequestVerifySMS_RecommendPhoneNum">推荐人手机:</string>
+    <string name="RegisterRequestVerifySMS_Send">提交，完成注册</string>
+
+    <string name="Register_MSG_SelectChkBox">想进下一步必须得勾选</string>
+
+    <string name="BaseService_ZhuanWaiKuai">赚外快</string>
+    <string name="BaseService_YiYuanQuan">一元券</string>
+    <string name="BaseService_YouHuiJiHe">优惠集合</string>
+    <string name="BaseService_QianChaHui">黔茶汇</string>
+    <string name="BaseService_QianJiuHui">黔酒汇</string>
+    <string name="BaseService_QianTeChan">黔特产</string>
+    <string name="BaseService_More">MORE</string>
+    <string name="BaseService_ZhuanWaiKuaiGood">赚外快&#160;热推商品</string>
+    <string name="BaseService_QianChaGood">黔茶推荐</string>
+    <string name="BaseService_Share">分享到</string>
+    <string name="BaseService_Backup">复制赚外快</string>
+
+    <string name="FenXing_Content">推荐此商品，这是很好！</string>
+
+    <string name="BaseService_ZhuanWaiKuai_Prefix">佣金：</string>
+    <string name="BaseService_TeChan_Prefix">优惠价：</string>
+
+    <string name="Preferential_Hint">请输入搜索关键字</string>
+    <string name="Preferential_Value">面值：</string>
+    <string name="Preferential_Date">有效期：</string>
+    <string name="Preferential_Address">地址：</string>
+    <string name="Preferential_Phone">电话：</string>
+
+    <string name="PreferentialDet_Prefer">优惠券</string>
+    <string name="PreferentialDet_PhoneNum">联系电话：</string>
+    <string name="PreferentialDet_TimeLine">营业时间：</string>
+    <string name="PreferentialDet_FindPosition">查看地理位置</string>
+    <string name="PreferentialDet_ObjectTitle">商家介绍</string>
+    <string name="PreferentialDet_Detail">参考图片</string>
+    <string name="PreferentialDet_UseInfo">使用规则：</string>
+
+    <string name="PreferentialBranchMain_Branch">分类</string>
+    <string name="PreferentialBranchMain_Food">美食餐饮</string>
+    <string name="PreferentialBranchMain_Rest">休闲娱乐</string>
+    <string name="PreferentialBranchMain_Life">生活服务</string>
+    <string name="PreferentialBranchMain_Hotel">酒店</string>
+    <string name="PreferentialBranchMain_Beautiful">丽人</string>
+
+    <string name="EarnMoney_Summary">赚外快流程</string>
+    <string name="EarnMoney_ProductList">推广商品排行榜</string>
+
+    <string name="EarnMoney_PreferMoney">优惠价：</string>
+    <string name="EarnMoney_Profit">返利</string>
+
+    <string name="specialartist_button">去购物车结算</string>
+    <string name="specialartist_addbasket">加入购物车</string>
+    <string name="specialartist_share">收藏</string>
+
+    <string name="MainMenu_ZuiXinHuoDong">最新优惠集合</string>
+    <string name="MainMenu_LeGouShangCheng">黔特优</string>
+    <string name="MainMenu_ShengHuoChaoShi">赚外快</string>
+    <string name="MainMenu_JiaZhuangJianCai">一元券</string>
+    <string name="MainMenu_QianJiuQianCha">优惠集合</string>
+    <string name="MainMenu_XueShengZhuanQu">黔茶汇</string>
+    <string name="MainMenu_YiYuanQuan">黔酒汇</string>
+    <string name="MainMenu_TeMaiHui">黔特产</string>
+    <string name="MainMenu_ZhuanWaiKuai">附近商家</string>
+    <string name="MainMenu_Msg_Exit">再按一次返回键退出</string>
+
+    <string name="PersonInfo_Register">注册</string>
+    <string name="PersonInfo_Login">登录</string>
+    <string name="PersonInfo_Title">用户登录</string>
+    <string name="PersonInfo_ForgotPassword">忘记密码?</string>
+
+	<string name="Articles_ShopPreferPrice">市场优惠价：</string>
+    <string name="Articles_PreServePrice">会员预付价：</string>
+    <string name="Articles_ReserveAmount">库存数量：</string>
+    <string name="Articles_BuyAmount">购买数量：</string>
+    <string name="Articles_ArtStandard">商品规格：</string>
+    <string name="Articles_ArtStandard1">商品规格1：</string>
+    <string name="Articles_ExtraPrice">推荐佣金：</string>
+    <string name="Articles_AmountUnit">件</string>
+    <string name="Articles_BuyArticle">收藏此商品</string>
+    <string name="Articles_ShareArticle">分享给好友</string>
+    <string name="Articles_TabHeader1">商品介绍</string>
+    <string name="Articles_TabHeader2">商品评论</string>
+    <string name="Articles_TabHeader3">商品咨询</string>
+
+    <string name="Articles_PermissionPrice">登录可见</string>
+
+    <string name="Articles_EvaluateGood">好评：</string>
+    <string name="Articles_EvaluateNormal">中评：</string>
+    <string name="Articles_EvaluateBad">差评：</string>
+    <string name="Articles_EvaluateGoodPro">好评度</string>
+
+    <string name="Articles_SendAsk">提交咨询</string>
+    <string name="Articles_MoreEvaluate">更多评论</string>
+    <string name="Articles_MoreAsk">更多咨询</string>
+    <string name="Articles_EditHint">描述你要咨询的问题！</string>
+
+    <string name="Articles_AskHead">咨询内容：</string>
+
+    <string name="Articles_BuyNow">立即购买</string>
+    <string name="Articles_Basket_Title">我的购物车</string>
+    <string name="Articles_Basket_AllChip">总计：</string>
+    <string name="Articles_Basket_Price">商品金额：</string>
+    <string name="Articles_Basket_VaryPrice">邮费：</string>
+    <string name="Articles_Basket_PreferPrice">优惠：</string>
+    <string name="Articles_Basket_Count">数量：</string>
+    <string name="Articles_Basket_Delete">删除：</string>
+    <string name="Articles_Basket_Calculate">去结算</string>
+    <string name="Articles_Basket_NoSelected">没有选择的物品</string>
+
+    <string name="OrderConfirm_Title">订单确认</string>
+    <string name="OrderConfirm_ReceiverInfo">收货人信息</string>
+    <string name="OrderConfirm_Receiver">收货人：</string>
+    <string name="OrderConfirm_Phone">电话：</string>
+    <string name="OrderConfirm_Address">地址：</string>
+    <string name="OrderConfirm_PayAndDeliveryMethod">支付及配送方式</string>
+    <string name="OrderConfirm_PayMethod">支付方式：</string>
+    <string name="OrderConfirm_DeliveryMethod">配送方式：</string>
+    <string name="OrderConfirm_CommodityList">商品清单</string>
+    <string name="OrderConfirm_Count">数量：%d个</string>
+    <string name="OrderConfirm_LeaveMessage">给卖家留言</string>
+    <string name="OrderConfirm_PayableAmount">应付金额：</string>
+    <string name="OrderConfirm_CommodityPrice">商品金额：</string>
+    <string name="OrderConfirm_Postage">邮费：</string>
+    <string name="OrderConfirm_Preference">优惠：</string>
+    <string name="OrderConfirm_GoToPay">去收银台付款</string>
+
+    <string name="SelectReceiver_NoSelected">没有选择的收货人</string>
+
+    <string-array name="DeliveryMode_String">
+        <item>自提付款</item>
+        <item>付款自提</item>
+        <item>快递</item>
+    </string-array>
+
+    <string-array name="DeliveryMode_Id">
+        <item>1</item>
+        <item>17</item>
+        <item>16</item>
+    </string-array>
+
+    <string name="select_receiver">选择收货人</string>
+    <string name="add_receiver">新建联系人</string>
+
+    <string name="OrderConfirm_MSG_Empty">暂无货物</string>
+
+    <string name="Pay_MoneyToPay">订单所需支付金额为：</string>
+    <string name="Pay_PaymentStatement">你通过官方发行的礼品卡或邦币支付：</string>
+    <string name="Pay_GiftCardNo">礼品卡卡号：</string>
+    <string name="Pay_GiftCardPassword">礼品卡密码：</string>
+    <string name="Pay_GiftCardBalance">礼品卡余额：</string>
+    <string name="Pay_InquireBalance">查询余额</string>
+    <string name="Pay_Notice1">你当前礼品卡余额为</string>
+    <string name="Pay_Notice11">你当前邦币为</string>
+    <string name="Pay_Notice2">使用</string>
+    <string name="Pay_Notice3">礼品卡进行支付。</string>
+    <string name="Pay_Notice31">邦币进行支付。</string>
+    <string name="Pay_Notice4">剩下的</string>
+    <string name="Pay_Notice5">元你可以通过以下方式支付：</string>
+    <string name="Pay_Submit">确认付款</string>
+
+	<string name="HuiYuanZhongXin_Title">会员中心</string>
+    <string name="HuiYuanZhongXin_News">新消息 [%d]</string>
+    <string name="HuiYuanZhongXin_DingDanZhongXin">订单中心</string>
+    <string name="HuiYuanZhongXin_DingDanZhuangTaiChaXun">订单状态查询</string>
+    <string name="HuiYuanZhongXin_WoDeDingDan">我的订单</string>
+    <string name="HuiYuanZhongXin_ZhangHuZhongXin">帐户中心</string>
+    <string name="HuiYuanZhongXin_WoDeXiaoXi">我的消息</string>
+    <string name="HuiYuanZhongXin_WoDeBangKe">我的邦客</string>
+    <string name="HuiYuanZhongXin_WoDeYouHuiJuan">我的优惠劵</string>
+    <string name="HuiYuanZhongXin_WoDeShouCang">我的收藏</string>
+    <string name="HuiYuanZhongXin_ShouHuoDiZhiGuanLi">收货地址管理</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa">修改密码</string>
+    <string name="HuiYuanZhongXin_FuWuGongNeng">服务功能</string>
+    <string name="HuiYuanZhongXin_LiPinKa">礼品卡</string>
+    <string name="HuiYuanZhongXin_PingLunZiXun">评论咨询</string>
+    <string name="HuiYuanZhongXin_TouSuJianYi">投诉建议</string>
+
+    <string name="HuiYuanZhongXin_ShouCang_Msg_Title">删除收藏</string>
+    <string name="HuiYuanZhongXin_ShouCang_Msg_Contents">确定要删除选择的收藏吗？</string>
+
+    <string name="HuiYuanZhongXin_DingDanChaXun_Title">订单查询速查</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_DingDanBianHao">订单编号：</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_ChaXun">查询</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_DingDanHao">订单号：</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_TiJiaoShiJian">提交时间：</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_PeiSongFangShi">配送方式：</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_TiShi">提示：</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_TiShi_Content">你选择的配送方式为</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_OrderNoShouldNotBeEmpty">订单编号不能为空</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_ProductCount_Fmt">%d件</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_PayTime_Msg_1">您已使用支付宝支付了订单，请等待发货。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_PayTime_Msg_2">您已使用礼品卡和支付宝支付了订单，请等待发货。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_SendTime_Msg_1">您的订单商品已发货，物流单号为：xxxxxxxxx，请注意查收。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_SendTime_Msg_2">您的订单商品已配捡完成，请到贵阳市花溪区甲秀南路溪山御景综合楼提货。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_RecvTime_Msg">您的订单交易完成，感谢你的下次光临。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_CancelTime_Msg">您的订单已被作废。</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_KuaiDi">快递</string>
+    <string name="HuiYuanZhongXin_DingDanChaXun_ZiTi">自提</string>
+
+    <string name="HuiYuanZhongXin_YouHuiJuan_YouXiaoQi">| 有效期至</string>
+    <string name="HuiYuanZhongXin_YouHuiJuan_ShiYongGuiZe">使用规则：</string>
+
+    <string name="HuiYuanZhongXin_DingDan_DaiFuKuan">待付款</string>
+    <string name="HuiYuanZhongXin_DingDan_DaiFaHuo">待发货</string>
+    <string name="HuiYuanZhongXin_DingDan_DaiShouHuo">待收货</string>
+    <string name="HuiYuanZhongXin_DingDan_DaiPingJia">待评价</string>
+    <string name="HuiYuanZhongXin_DingDan_DingDanZhuangTai">订单状态：</string>
+    <string name="HuiYuanZhongXin_DingDan_State1">待付款</string>
+    <string name="HuiYuanZhongXin_DingDan_State1_Oper1">付款</string>
+    <string name="HuiYuanZhongXin_DingDan_State1_Oper2">取消</string>
+    <string name="HuiYuanZhongXin_DingDan_State2">等待发货</string>
+    <string name="HuiYuanZhongXin_DingDan_State2_Oper">提醒发货</string>
+    <string name="HuiYuanZhongXin_DingDan_State3">待收货</string>
+    <string name="HuiYuanZhongXin_DingDan_State3_Oper">确认收货</string>
+    <string name="HuiYuanZhongXin_DingDan_State4">已完成</string>
+    <string name="HuiYuanZhongXin_DingDan_State4_Oper">立即评价</string>
+    <string name="HuiYuanZhongXin_DingDan_ShangPinPingLun">商品评论</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_DingDanCancel">订单成功取消了。</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_RequireDelivery">发货要求成功发送了。</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_ConfirmReception">收货确认成功</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_CommentUploaded">您的评价已上传了。</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_InputComment">请输入评价的话。</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_Title">订单取消</string>
+    <string name="HuiYuanZhongXin_DingDan_Msg_Contents">确定要取消此订单吗？</string>
+    <string name="HuiYuanZhongXin_DingDan_ProductCost_Fmt">￥ %.2f</string>
+
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_XinJianShouHuoRen">新建收货人</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_ShouHuoRen">收货人：</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_DianHua">电话：</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_DiZhi">地址：</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_XinZengShouHuoRenXinXi">新增收货人信息</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_XiuGaiShouHuoRenXinXi">修改收货人信息</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_TiJiaoXinZeng">提交新增</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_TiJiaoXiuGai">提交修改</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverNameEmpty">收货人不能为空。</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverPhoneEmpty">电话不能为空。</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverAddrEmpty">详细地址不能为空。</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverNameInvalid">收货人名长度为2~25位字符</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverAddedSuccessfully">新的收货人成功添加了。</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_ReceiverModifiedSuccessfully">收货人信息成功修改了。</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_Title">删除收货人</string>
+    <string name="HuiYuanZhongXin_DiZhiGuanLi_Msg_Contents">确定要删除选择的收货人信息吗？</string>
+
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_YanZhengShouJi">验证手机</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_ChongZhiMiMa">重置密码</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_YiBangDing">该帐户已绑定手机</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_ShouJiHao">已绑定手机号：%s</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_HuoQuYanZhengMa">获取短信验证码</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_YanZhengMa_Error">若该手机号无法接收验证短信，请拨打我们的客服电话：</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_TianXieYanZhengMa">请填写短信验证码：</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_XinMiMa">新密码：</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_QueRenXinMiMa">确认新密码：</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_TiJiaoXiuGai">提交修改</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_Msg_PhoneNoShouldNotBeEmpty">手机号不能为空</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_Msg_CaptchaShouldNotBeEmpty">验证码不能为空</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_Msg_PasswordShouldNotBeEmpty">密码不能为空</string>
+    <string name="HuiYuanZhongXin_XiuGaiMiMa_Msg_PasswordMismatch">两个密码不匹配</string>
+
+    <string name="HuiYuanZhongXin_BangKe_WhatIsBangKe">什么是邦客？</string>
+    <string name="HuiYuanZhongXin_BangKe_BangKeIs">邦客指通过互联网帮助移乐邦会员进行导入和商品推广，并按照推荐注册数量和成交效果获得邦客值（佣金）的移乐邦会员。</string>
+    <string name="HuiYuanZhongXin_BangKe_WoYaoDang">我要当邦客</string>
+    <string name="HuiYuanZhongXin_BangKe_JiLu">我要邦客记录</string>
+    <string name="HuiYuanZhongXin_BangKe_JiLu_CaoZuoShuoMing">操作说明：</string>
+    <string name="HuiYuanZhongXin_BangKe_JiLu_CaoZuoJieGuo">操作结果：</string>
+    <string name="HuiYuanZhongXin_BangKe_JiLu_CaoZuoShiJian">操作时间：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_Step_1">填写申请</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_Step_2">上传身份证</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_Step_3">等待审核</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_Title">申请成为邦客</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_XingMing">姓名：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ShenFenZheng">身份证号码：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_YinHangKa">此身份证开办的银行卡号或支付宝：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_YinHang">该银行卡的开户银行或支付宝：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZhuYiZhiFuBao">注：绑定支付宝请在下面填写“支付宝”</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_QiTaMiaoShu">其他描述：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZiLiaoYaoQiu">申请邦客提交资料要求：</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZiLiaoYaoQiu_1">(1)、身份证照片要真实、清晰看到身份证号码和姓名</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZiLiaoYaoQiu_2">(2)、绑定银行：以该身份证开立的银行卡号或支付宝</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZiLiaoYaoQiu_3">(3)、开户银行：____省____市____银行____支行（开户银行地址）</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_1_ZiLiaoYaoQiu_4">(4)、姓名要与身份证一致</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_2_Title">上传身份证附件</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_2_ShouChi">上传 手持身份证(正面)</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_2_WanChengShengQing">提交，完成申请</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_2_PaiZhao">拍照</string>
+    <string name="HuiYuanZhongXin_BangKe_ShenQing_2_CongShouJi">从手机相册中选</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_Title">我的邦客中心</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_WoDeBangBi">我的邦币</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_BangBiShenQingGuiZe">邦币申请提现规则</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_BangBiJiLu">我的邦币记录</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_BangBiXinXi">我的邦币信息</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_ShenFenZhengHao">身份证号：</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_BangDingYinHangKa">绑定银行卡：</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_KaiKaYinHang">开卡银行：</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_ShenQingJieGuo">申请结果：</string>
+    <string name="HuiYuanZhongXin_BangKeZhongXin_ShenQingTiXian">申请提现</string>
+
+    <string name="HuiYuanZhongXin_LiPinKa_Title">我的礼品卡</string>
+    <string name="HuiYuanZhongXin_LiPinKa_ChaXun">查询</string>
+    <string name="HuiYuanZhongXin_LiPinKa_JiHuo">激活</string>
+    <string name="HuiYuanZhongXin_LiPinKa_LiJiJiHuo">立即激活</string>
+    <string name="HuiYuanZhongXin_LiPinKa_LiPinKaJiHuo">礼品卡激活</string>
+    <string name="HuiYuanZhongXin_LiPinKa_HaoMa">礼品卡号码：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_MiMa">礼品卡密码：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_BangDingShouJi">绑定手机号码：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_YanZhengMa">验证码：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_YiBangDingDe">我已绑定的礼品卡</string>
+    <string name="HuiYuanZhongXin_LiPinKa_Hao">礼品卡号：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_MianZhi">面值：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_YuE">余额：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_JiHuoChengGong">礼品卡激活成功！</string>
+    <string name="HuiYuanZhongXin_LiPinKa_GongXi">恭喜你，你的礼品卡：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_JiHuoChengGong_2">激活成功！</string>
+    <string name="HuiYuanZhongXin_LiPinKa_YuEWei">礼品卡余额为：</string>
+    <string name="HuiYuanZhongXin_LiPinKa_Msg_CardNoShouldNotBeEmpty">礼品卡号码不能为空</string>
+    <string name="HuiYuanZhongXin_LiPinKa_Msg_CardPasswordShouldNotBeEmpty">礼品卡密码不能为空</string>
+    <string name="HuiYuanZhongXin_LiPinKa_Msg_PhoneNoShouldNotBeEmpty">手机号码不能为空</string>
+    <string name="HuiYuanZhongXin_LiPinKa_Msg_CaptchaShouldNotBeEmpty">验证码不能为空</string>
+
+    <string name="HuiYuanZhongXin_PingLun_Title">我的商品评论</string>
+    <string name="HuiYuanZhongXin_PingLun_NiDePingLun">你的评论：</string>
+    <string name="HuiYuanZhongXin_PingLun_ZiXun">咨询</string>
+    <string name="HuiYuanZhongXin_PingLun_ZiXun_Title">我的商品咨询</string>
+    <string name="HuiYuanZhongXin_PingLun_ZiXun_PingLun">评论</string>
+    <string name="HuiYuanZhongXin_PingLun_ZiXun_NeiRong">咨询内容：</string>
+
+    <string name="HuiYuanZhongXin_JianYi_Title">投诉与建议</string>
+    <string name="HuiYuanZhongXin_MyJianYi_Title">我要投诉/建议</string>
+    <string name="HuiYuanZhongXin_JianYi_ZhuTi">主题：</string>
+    <string name="HuiYuanZhongXin_JianYi_ZhuTi_2">投诉/建议主题：</string>
+    <string name="HuiYuanZhongXin_JianYi_EmailAddress">Email地址：</string>
+    <string name="HuiYuanZhongXin_JianYi_NeiRong">内容：</string>
+    <string name="HuiYuanZhongXin_JianYi_WoYao">我要投诉/建议</string>
+    <string name="HuiYuanZhongXin_JianYi_NeiRong_2">投诉/建议内容：</string>
+    <string name="HuiYuanZhongXin_JianYi_HuiFu">移乐邦回复：</string>
+    <string name="HuiYuanZhongXin_JianYi_QueDingTiJiao">确定提交</string>
+
+    <string name="HuiYuanZhongXin_XiaoXi_Msg_Title">删除收货人</string>
+    <string name="HuiYuanZhongXin_XiaoXi_Msg_Contents">确定要删除选择的收货人信息吗？</string>
+
+    <!-- General String Start -->
+    <string name="waiting">请稍等...</string>
+    <string name="server_connection_error">跟服务器连接失败.</string>
+    <string name="str_money_yuansymbol">￥</string>
+    <string name="str_money_yuan">元</string>
+	<string name="chinese_date_fmt">%1$d年%2$d月%3$d日</string>
+    <string name="ok">确定</string>
+    <string name="next">下一步</string>
+    <string name="send">发送</string>
+    <!--string name="cancel">取消</string-->
+    <string name="no_selected_item">没有选择的项目</string>
+    <string name="no_data">没有数据</string>
+    <!-- General String End -->
+
+	<!-- -->
+	<string name="app_picker_name">应用</string>
+  <string name="bookmark_picker_name">书签</string>
+  <string name="button_add_calendar">添加事件至日历</string>
+  <string name="button_add_contact">添加联系人</string>
+  <string name="button_back">返回</string>
+  <string name="button_book_search">打开图书搜索</string>
+  <string name="button_cancel">取消</string>
+  <string name="button_custom_product_search">自定义搜索</string>
+  <string name="button_dial">拨号</string>
+  <string name="button_done">完成</string>
+  <string name="button_email">发送email</string>
+  <string name="button_get_directions">获取地址</string>
+  <string name="button_google_shopper">谷歌购物</string>
+  <string name="button_mms">发送彩信</string>
+  <string name="button_ok">确定</string>
+  <string name="button_open_browser">打开浏览器</string>
+  <string name="button_product_search">打开产品搜索</string>
+  <string name="button_search_book_contents">搜索图书内容</string>
+  <string name="button_share_app">共享应用</string>
+  <string name="button_share_bookmark">分享书签</string>
+  <string name="button_share_clipboard">分享剪切板</string>
+  <string name="button_share_contact">分享联系人</string>
+  <string name="button_show_map">显示地图</string>
+  <string name="button_sms">发送短信</string>
+  <string name="button_web_search">网页搜索</string>
+  <string name="button_wifi">连接到网络</string>
+  <string name="contents_contact">联系人信息</string>
+  <string name="contents_email">Email地址</string>
+  <string name="contents_location">地理坐标</string>
+  <string name="contents_phone">电话号码</string>
+  <string name="contents_sms">短信地址</string>
+  <string name="contents_text">纯文本</string>
+  <string name="history_clear_one_history_text">删除</string>
+  <string name="history_clear_text">删除历史</string>
+  <string name="history_email_title">条码扫描器历史</string>
+  <string name="history_empty">空的</string>
+  <string name="history_empty_detail">没有条码扫描已记录</string>
+  <string name="history_send">发送历史</string>
+  <string name="history_title">历史</string>
+  <string name="menu_encode_mecard">使用MECARD</string>
+  <string name="menu_encode_vcard">使用vCard</string>
+  <string name="menu_help">帮助</string>
+  <string name="menu_history">历史</string>
+  <string name="menu_settings">设置</string>
+  <string name="menu_share">分享</string>
+  <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+  <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+  <string name="msg_default_format">格式</string>
+  <string name="msg_default_meta">元数据</string>
+  <string name="msg_default_mms_subject">Hi</string>
+  <string name="msg_default_status">请将条码置于取景框内扫描。  </string>
+  <string name="msg_default_time">时间</string>
+  <string name="msg_default_type">类型</string>
+  <string name="msg_encode_contents_failed">无法根据已有数据生成条码。   </string>
+  <string name="msg_google_books">谷歌图书</string>
+  <string name="msg_google_product">谷歌购物</string>
+  <string name="msg_google_shopper_missing">谷歌购物未安装</string>
+  <string name="msg_install_google_shopper">谷歌购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+  <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+  <string name="msg_redirect">重定向</string>
+  <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+  <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+  <string name="msg_sbc_no_page_returned">无页面返回</string>
+  <string name="msg_sbc_page">页面</string>
+  <string name="msg_sbc_results">结果</string>
+  <string name="msg_sbc_searching_book">搜索图书…</string>
+  <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+  <string name="msg_sbc_unknown_page">未知页面</string>
+  <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+  <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+  <string name="msg_share_text">或键入一些文字</string>
+  <string name="msg_sure">你肯定吗？</string>
+  <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+  <string name="preferences_actions_title">找到条码时</string>
+  <string name="preferences_auto_focus_title">使用自动对焦</string>
+  <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+  <string name="preferences_bulk_mode_title">批量扫描模式</string>
+  <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+  <string name="preferences_custom_product_search_summary" formatted="false">替换：％s=内容，％f=格式，％t=类型</string>
+  <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+  <string name="preferences_decode_1D_title">扫描 一维条码</string>
+  <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+  <string name="preferences_decode_QR_title">扫描 QR码</string>
+  <string name="preferences_device_bug_workarounds_title">设备问题解决办法</string>
+  <string name="preferences_disable_continuous_focus_summary">只使用标准对焦模式</string>
+  <string name="preferences_disable_continuous_focus_title">没有持续关注</string>
+  <string name="preferences_disable_exposure_title">无曝光</string>
+  <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+  <string name="preferences_front_light_title">前灯</string>
+  <string name="preferences_general_title">一般设置</string>
+  <string name="preferences_name">设置</string>
+  <string name="preferences_play_beep_title">提示音</string>
+  <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+  <string name="preferences_remember_duplicates_title">记住重复</string>
+  <string name="preferences_result_title">结果设置</string>
+  <string name="preferences_scanning_title">条码类型选择</string>
+  <string name="preferences_search_country">搜索国家</string>
+  <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+  <string name="preferences_supplemental_title">检索更多信息</string>
+  <string name="preferences_try_bsplus">尝试条码扫描器+</string>
+  <string name="preferences_try_bsplus_summary">增强新的功能和接口</string>
+  <string name="preferences_vibrate_title">振动</string>
+  <string name="result_address_book">找到联系人信息</string>
+  <string name="result_calendar">找到日历事件</string>
+  <string name="result_email_address">找到email地址</string>
+  <string name="result_geo">找到地理坐标</string>
+  <string name="result_isbn">找到图书</string>
+  <string name="result_product">找到产品</string>
+  <string name="result_sms">找到短信地址</string>
+  <string name="result_tel">找到电话号码</string>
+  <string name="result_text">找到纯文本</string>
+  <string name="result_uri">找到URL</string>
+  <string name="result_wifi">发现网络配置</string>
+  <string name="sbc_name">Google图书搜索</string>
+  <string name="share_name">通过条码分享</string>
+  <string name="wifi_changing_network">请求连接到网络\u2026</string>
+  <string name="wifi_ssid_label">网络SSID</string>
+  <string name="wifi_type_label">类型</string>
+
+    <string name="JianYi_Subject_Error">请输入投诉/建议主题</string>
+    <string name="JianYi_Content_Error">请输入投诉/建议内容</string>
+    <string name="HuiYuanZhongXin_RealName_CanNotEmpy">姓名不能为空</string>
+    <string name="HuiYuanZhongXin_IDNO_CanNotEmpy">身份证号不能为空</string>
+    <string name="HuiYuanZhongXin_BankCard_CanNotEmpy">银行卡不能为空</string>
+    <string name="HuiYuanZhongXin_BankName_CanNotEmpy">开户银行不能为空</string>
+    <string name="HuiYuanZhongXin_IDPhoto_CanNotEmpy">身份证图片不能为空</string>
+
+    <string name="HuiYuanZhongXin_BKState0">审核中...</string>
+    <string name="HuiYuanZhongXin_BKState1">审核失败</string>
+    <string name="HuiYuanZhongXin_BKState2">审核通过</string>
+    <string name="HuiYuanZhongXin_BKState3">取消资格</string>
+    <string name="HuiYuanZhongXin_BKState4">申请暂停资格</string>
+    <string name="HuiYuanZhongXin_BKState5">资格被暂停</string>
+
+    <string name="HuiYuanZhongXin_NotEnoughBangBi">邦币值至少50才可以提现</string>
+    <string name="InputCorrectBangBi">输入正确的邦币值</string>
+    <string name="StateNotAbleToSubmit">邦客申请通过之后才可以</string>
+
+    <string name="ShenQingFailed">抱歉,您的提现申请审核失败,咨询电话：4008500669</string>
+
+
+    <!-- Alipay Relation  -->
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装移动快捷支付，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+
+
+    <!-- Share SDK Relation  -->
+    <string name="proj_name">ShareSDK</string>
+
+    <string name="more">更多</string>
+    <string name="sm_item_demo">接口</string>
+    <string name="sm_item_auth">授权</string>
+    <string name="sm_item_wechat">微信</string>
+    <string name="sm_item_yixin">易信</string>
+    <string name="sm_item_customer">自定义接口</string>
+    <string name="sm_item_fl_weibo">关注新浪微博</string>
+    <string name="sm_item_fl_tc">关注腾讯微博</string>
+    <string name="sm_item_visit_wechat">关注官方微信</string>
+    <string name="sm_item_visit_website">关注官方网站</string>
+    <string name="sm_item_about">Demo版本 Ver. %s</string>
+    <string name="plz_choose_wechat">请选择微信客户端完成操作</string>
+    <string name="get_token_format">获取%s的AccessToken</string>
+    <string name="get_user_info_format">获取%s授权用户资料</string>
+    <string name="get_other_info_format">获取%s其他用户资料</string>
+    <string name="share_to_format">分享到%s</string>
+
+    <string name="demo_share_all_gui">分享全部（有分享界面）</string>
+    <string name="demo_share_all">分享全部（无界面，直接分享）</string>
+    <string name="demo_get_access_token">获取AccessToken</string>
+    <string name="demo_get_my_info">获取授权用户资料</string>
+    <string name="demo_get_other_info">获取其他用户资料</string>
+
+    <string name="get_sina_friends_list">获取新浪微博关注列表</string>
+    <string name="get_tencent_friends_list">获取腾讯微博关注列表</string>
+    <string name="customer_douban">搜索用户</string>
+    <string name="customer_facebook">获取通知列表</string>
+    <string name="customer_nemb">获取推荐话题</string>
+    <string name="customer_renren">上传照片到用户的相册</string>
+    <string name="customer_sina">获取微博主页列表</string>
+    <string name="customer_qzone">发表日志到QQ空间</string>
+    <string name="customer_tencent">获取我的粉丝列表</string>
+    <string name="customer_twitter">获取主页列表</string>
+    <string name="customer_kaixin">获取可能认识的人</string>
+    <string name="customer_sohu">获取好友列表</string>
+    <string name="customer_youdao">获取笔记本列表</string>
+    <string name="customer_suishenkan">获取搜狐随身看书签列表</string>
+
+    <string name="not_yet_authorized">尚未授权</string>
+    <string name="share_content">ShareSDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK</string>
+    <string name="share_content_short">ShareSDK不仅集成简单、支持如微信、新浪微博、腾讯微博等社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK</string>
+    <string name="evenote_title">ShareSDK是一个神奇的SDK</string>
+
+    <string name="update">文字分享</string>
+    <string name="image_upload">图片分享（本地图片）</string>
+    <string name="image_upload_bitmap">图片分享（Bitmap对象）</string>
+    <string name="image_upload_url">图片分享（网络图片）</string>
+    <string name="emoji_upload">表情分享（本地图片）</string>
+    <string name="emoji_upload_url">表情分享（网络图片）</string>
+    <string name="emoji_upload_bm">表情分享（Bitmap对象）</string>
+    <string name="music_upload">音乐分享</string>
+    <string name="video_upload">视频分享</string>
+    <string name="webpage_upload">网页分享（本地图片）</string>
+    <string name="webpage_upload_bitmap">网页分享（Bitmap对象）</string>
+    <string name="webpage_upload_url">网页分享（网络图片）</string>
+    <string name="app_upload">应用分享（携带文件）</string>
+    <string name="app_upload_extinfo">应用分享（携带脚本）</string>
+    <string name="file_upload">文件分享</string>
+    <string name="share_to_wechat">微信好友</string>
+    <string name="share_to_moment">微信朋友圈</string>
+    <string name="share_to_favorite">微信收藏</string>
+    <string name="wechat_demo_title">微信分享Demo标题</string>
+    <string name="qzone_add_blog_sample"><h1>QQ互联</h1><font color='red'>轻松分享,</font><font color='green'>快乐生活。</font><a href='http://connect.qq.com'>详情请看。</a><img src='http://imgcache.qq.com/ptlogin/head/1_100.gif'></img></string>
+    <string name="wechat_client_is_not_installed_correctly">微信客户端未安装或版本太旧</string>
+    <string name="wechat_client_not_support_following_operation">微信客户端不支持第三方应用执行关注功能</string>
+    <string name="share_to_yixin">易信好友</string>
+    <string name="share_to_yixin_moment">易信朋友圈</string>
+    <string name="share_to_yixin_favorite">易信收藏</string>
+    <string name="yixin_demo_title">易信分享Demo标题</string>
+    <string name="receive_rewards">恭喜你得到%s个金币！</string>
+    <string name="buy_success">购买成功</string>
+    <string name="buy_failed">购买失败</string>
+    <string name="laiwang">来往</string>
+
+
+</resources>

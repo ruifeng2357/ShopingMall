@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:background="#00000000">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="180dp" android:layout_centerInParent="true" android:id="@+id/back_layout"
+            android:background="@drawable/popupdlg_back">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="15">
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="450">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="20">
+            </LinearLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="30">
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/txtTakeAPhoto" android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false" android:textSize="22px"
+                        android:gravity="center" android:background="@drawable/gray_btn_back_3"
+                        android:textColor="@android:color/black" android:layout_weight="30"
+                        android:layout_alignParentBottom="false" android:layout_alignParentRight="false"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/btnTakePhoto" android:background="@drawable/btn_empty"
+                        android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_2_PaiZhao"
+                        android:textColor="@color/black" android:textSize="20dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="15">
+            </LinearLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="30">
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/txtSelectFromAlbum" android:layout_alignParentTop="false"
+                        android:background="@drawable/gray_btn_back_3"
+                        android:textSize="22px" android:gravity="center" android:textColor="@android:color/black"
+                        android:layout_weight="30"
+                        android:layout_alignParentLeft="false" android:layout_alignParentBottom="false"
+                        android:layout_alignParentRight="false"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/btnSelImage" android:background="@drawable/btn_empty"
+                        android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_2_CongShouJi"
+                        android:textColor="@color/black" android:textSize="20dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="15">
+            </LinearLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="30">
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/txtCancel"
+                        android:layout_alignRight="@+id/txtTakeAPhoto" android:gravity="center"
+                        android:background="@drawable/gray_btn_back_4" android:textSize="22px" android:textColor="#ffffff"
+                        android:layout_weight="30"
+                        android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                        android:singleLine="false"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/btnCancel" android:background="@drawable/btn_empty"
+                        android:text="@string/cancel" android:textColor="#ffffff" android:textSize="20dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="20">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="15">
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

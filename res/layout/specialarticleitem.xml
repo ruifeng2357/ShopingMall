@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="150px" android:id="@+id/rlArticlesItemMain" android:background="@color/white">
+
+    <ImageView
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:id="@+id/imgArticleItem" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_marginLeft="10px" android:layout_marginTop="10px" android:src="@drawable/bmp2"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            android:id="@+id/txtTitle" android:layout_alignParentLeft="false" android:layout_marginLeft="30px"
+            android:layout_alignTop="@+id/imgArticleItem" android:layout_toRightOf="@+id/imgArticleItem"
+            android:textSize="20px" android:textColor="@color/black"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/str_money_yuansymbol" android:id="@+id/txtValueHead" android:textColor="@color/red"
+              android:textSize="22px"
+              android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/txtTitle"
+              android:layout_marginTop="10px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20.00"
+              android:id="@+id/txtValue" android:textColor="@color/red" android:textSize="22px"
+              android:layout_toRightOf="@+id/txtValueHead" android:layout_alignTop="@+id/txtValueHead"/>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtValueHead">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/specialartist_share" android:id="@+id/txtShare" android:textSize="22px"
+                  android:gravity="center_vertical"
+                  android:textColor="@color/dark_gray"
+                  android:layout_toRightOf="@+id/btnShare" android:layout_below="@+id/txtValue"
+                  android:layout_marginTop="5px"/>
+        <Button android:layout_width="25px" android:layout_height="25px" android:id="@+id/btnShare"
+                android:background="@drawable/staricon" android:layout_toRightOf="@+id/txtBasket"
+                android:layout_marginLeft="30px"
+                android:layout_below="@+id/txtValue" android:layout_marginTop="5px"/>
+        <Button
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:id="@+id/btnBasket"
+                android:layout_marginTop="5px" android:background="@drawable/packeticon"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/specialartist_addbasket"
+                  android:id="@+id/txtBasket" android:textSize="22px"
+                  android:layout_toRightOf="@+id/btnBasket"
+                  android:gravity="center_vertical" android:layout_marginLeft="5px" android:textColor="@color/dark_gray"
+                  android:layout_alignTop="@+id/btnBasket"/>
+    </RelativeLayout>
+</RelativeLayout>

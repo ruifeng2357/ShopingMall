@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="160px" android:id="@+id/rlItemMain">
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="140px"
+            android:id="@+id/imageView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:src="@drawable/frameback" android:scaleType="fitXY" android:layout_margin="10px"/>
+    <ImageView
+            android:layout_width="200px"
+            android:layout_height="90px"
+            android:id="@+id/imgCoupon" android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignLeft="@+id/imageView" android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentBottom="false"
+            android:padding="10px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="New Text"
+            android:id="@+id/txtCouponDesc"
+            android:textSize="22px"
+            android:layout_toRightOf="@+id/imgCoupon" android:layout_alignTop="@+id/imgCoupon"
+            android:layout_marginTop="15px" android:layout_marginRight="15px"
+            android:layout_alignRight="@+id/imageView" android:layout_alignBottom="@+id/imgCoupon"/>
+    <TextView
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:text="$10.90"
+            android:id="@+id/txtCouponCost"
+            android:layout_centerVertical="true"
+            android:textSize="28px" android:textColor="@color/red" android:layout_alignLeft="@+id/imageView"
+            android:layout_below="@+id/imgCoupon" android:layout_marginLeft="15px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:text="@string/HuiYuanZhongXin_YouHuiJuan_YouXiaoQi"
+            android:id="@+id/textView2" android:layout_toRightOf="@+id/txtCouponCost"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/imgCoupon" android:layout_alignBottom="@+id/txtCouponCost" android:textSize="20px"
+            android:textColor="#606060" android:layout_marginLeft="5px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:id="@+id/txtExpire" android:layout_toRightOf="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/imgCoupon" android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/txtCouponDesc" android:layout_marginLeft="10px" android:textColor="#606060"
+            android:textSize="20px"/>
+
+</RelativeLayout>

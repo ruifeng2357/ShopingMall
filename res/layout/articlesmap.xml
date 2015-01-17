@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlArticlesMapMain">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlBody" android:layout_above="@+id/rlBottomBar"
+            android:background="@color/soft_gray">
+        <TextView android:layout_width="fill_parent" android:layout_height="40px" android:text=" "
+                  android:id="@+id/txtTitle" android:textColor="@color/black" android:textSize="30px"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                  android:layout_marginLeft="5px" android:layout_marginTop="5px" android:layout_marginRight="5px"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="40px"
+                  android:text="@string/Preferential_Address" android:id="@+id/txtAddressHead"
+                  android:textColor="@color/gray" android:textSize="26px" android:gravity="center_vertical"
+                  android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                  android:layout_below="@+id/txtTitle" android:layout_alignLeft="@+id/txtTitle"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:id="@+id/txtAddress" android:textColor="@color/gray" android:textSize="26px"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                  android:layout_alignTop="@+id/txtAddressHead" android:layout_toRightOf="@+id/txtAddressHead"
+                  android:layout_alignRight="@+id/txtTitle"/>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:id="@+id/rlDetailInfo"
+                        android:background="@drawable/frameback"
+                        android:layout_below="@+id/txtAddress" android:layout_marginLeft="10px"
+                        android:layout_marginTop="10px" android:layout_marginRight="10px">
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_ReserveAmount" android:id="@+id/txtReserveAmountHead"
+                      android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                      android:gravity="center_vertical" android:layout_marginLeft="20px" android:layout_marginTop="10px"
+                      android:textColor="@color/dark_gray" android:textSize="20px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px" android:text="8"
+                      android:id="@+id/txReserveAmount" android:gravity="center_vertical"
+                      android:textColor="@color/black" android:textSize="20px"
+                      android:layout_toRightOf="@+id/txtReserveAmountHead"
+                      android:layout_alignTop="@+id/txtReserveAmountHead"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_AmountUnit" android:id="@+id/txtReserveAmountUnit"
+                      android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                      android:layout_toRightOf="@+id/txReserveAmount"
+                      android:layout_alignTop="@+id/txtReserveAmountHead"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_BuyAmount" android:id="@+id/txtBuyAmountHead"
+                      android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                      android:layout_alignLeft="@+id/txtReserveAmountHead"
+                      android:layout_below="@+id/txtReserveAmountHead" android:layout_marginTop="5px"/>
+            <RelativeLayout android:layout_width="100px" android:layout_height="25px"
+                            android:layout_toRightOf="@+id/txtReserveAmountHead"
+                            android:background="@drawable/amount_back" android:id="@+id/rlAmountSet"
+                            android:layout_alignTop="@+id/txtBuyAmountHead">
+                <TextView android:layout_width="30px" android:layout_height="fill_parent" android:text="+"
+                          android:id="@+id/txtPlus" android:layout_alignParentLeft="false"
+                          android:layout_alignParentTop="false" android:gravity="center" android:textSize="18px"/>
+                <TextView android:layout_width="30px" android:layout_height="fill_parent" android:text="-"
+                          android:id="@+id/txtMinus" android:gravity="center" android:textSize="18px"
+                          android:layout_alignParentRight="true" android:layout_alignTop="@+id/txtPlus"/>
+                <TextView android:layout_width="30px" android:layout_height="fill_parent" android:text="1"
+                          android:id="@+id/txtBuyAmount" android:gravity="center" android:textSize="16px"
+                          android:layout_toRightOf="@+id/txtPlus" android:layout_alignTop="@+id/txtPlus"
+                          android:layout_toLeftOf="@+id/txtMinus" android:textColor="@color/black"
+                          android:background="@drawable/article_amount_back"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="30px"
+                            android:layout_alignLeft="@+id/txtReserveAmountHead"
+                            android:layout_below="@+id/txtBuyAmountHead" android:layout_marginRight="5px"
+                            android:id="@+id/rlStandard1" android:layout_marginTop="5px">
+                <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                          android:text="@string/Articles_ArtStandard" android:id="@+id/txtStandard"
+                          android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                          android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/hscrlArticlles_Standards_1"
+                        android:layout_toRightOf="@+id/txtStandard"
+                        android:layout_centerVertical="true">
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/rlArticles_Standards_1">
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="30px"
+                            android:layout_alignLeft="@+id/txtReserveAmountHead" android:layout_below="@+id/rlStandard1"
+                            android:layout_marginRight="5px" android:id="@+id/rlStandard2"
+                            android:layout_marginTop="5px">
+                <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                          android:text="@string/Articles_ArtStandard" android:id="@+id/txtStandard2"
+                          android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                          android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/hscrlArticlles_Standards_2"
+                        android:layout_toRightOf="@+id/txtStandard2"
+                        android:layout_centerVertical="true">
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/rlArticles_Standards_2">
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_ExtraPrice" android:id="@+id/txtServePrice"
+                      android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                      android:layout_alignLeft="@+id/txtReserveAmountHead" android:layout_below="@+id/rlStandard2"
+                      android:layout_marginTop="5px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px" android:text="1.98"
+                      android:id="@+id/txtExtraPrice" android:gravity="center_vertical" android:textColor="@color/red"
+                      android:textSize="20px" android:layout_toRightOf="@+id/txtReserveAmountHead"
+                      android:layout_alignTop="@+id/txtServePrice"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/str_money_yuan" android:id="@+id/txtExtraYuan"
+                      android:gravity="center_vertical" android:textColor="@color/dark_gray" android:textSize="20px"
+                      android:layout_toRightOf="@+id/txtExtraPrice" android:layout_alignTop="@+id/txtServePrice"/>
+            <ImageView android:layout_width="28px" android:layout_height="30px" android:id="@+id/imgStar"
+                       android:layout_alignLeft="@+id/txtReserveAmountHead" android:layout_below="@+id/txtServePrice"
+                       android:layout_marginTop="5px" android:src="@drawable/staricon" android:scaleType="fitCenter"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_BuyArticle" android:id="@+id/txtReceive"
+                      android:gravity="center_vertical" android:textColor="@color/black" android:textSize="20px"
+                      android:layout_toRightOf="@+id/imgStar" android:layout_alignTop="@+id/imgStar"
+                      android:layout_marginLeft="5px"/>
+            <ImageView android:layout_width="28px" android:layout_height="30px" android:id="@+id/imgConnectFriend"
+                       android:src="@drawable/shareicon" android:scaleType="fitCenter"
+                       android:layout_toRightOf="@+id/txtReceive" android:layout_alignTop="@+id/imgStar"
+                       android:layout_marginLeft="30px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                      android:text="@string/Articles_ShareArticle" android:id="@+id/txtShare"
+                      android:gravity="center_vertical" android:textColor="@color/black" android:textSize="20px"
+                      android:layout_toRightOf="@+id/imgConnectFriend" android:layout_alignTop="@+id/imgStar"
+                      android:layout_marginLeft="5px"/>
+        </RelativeLayout>
+        <view class="com.baidu.mapapi.MapView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:id="@+id/viewBaiduMap_Articles"
+              android:layout_below="@+id/rlDetailInfo" android:layout_marginLeft="10px"
+              android:layout_marginTop="10px" android:layout_marginRight="10px" android:layout_marginBottom="10px"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="176px"
+                    android:layout_height="96px"
+                    android:id="@+id/rlSmalPopupBack"
+                    android:layout_marginLeft="304px"
+                    android:layout_marginTop="644px"
+                    android:background="@drawable/smallpopupback">
+
+        <ImageView
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:scaleType="fitCenter"
+                android:id="@+id/imgSmallPopup_Plus"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15px"
+                android:src="@drawable/redplus"/>
+        <TextView
+                android:layout_width="120px"
+                android:layout_height="30px"
+                android:text="@string/specialartist_addbasket"
+                android:id="@+id/lblSmallPopup_Add"
+                android:layout_toRightOf="@+id/imgSmallPopup_Plus"
+                android:layout_marginLeft="10px" android:layout_alignTop="@+id/imgSmallPopup_Plus" android:gravity="center_vertical|left"
+                android:textColor="@color/white" android:textSize="20px"/>
+        <ImageView
+                android:layout_width="25px"
+                android:layout_height="30px"
+                android:id="@+id/imgSmallPopup_Go" android:layout_alignLeft="@+id/imgSmallPopup_Plus" android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="true" android:layout_marginBottom="15px"
+                android:scaleType="centerInside" android:src="@drawable/goicon"/>
+        <TextView
+                android:layout_width="120px"
+                android:layout_height="30px"
+                android:text="@string/specialartist_button"
+                android:id="@+id/lblSmallPopup_Go" android:layout_alignLeft="@+id/lblSmallPopup_Add"
+                android:layout_alignTop="@+id/imgSmallPopup_Go" android:gravity="center_vertical|left"
+                android:textColor="@color/white" android:textSize="20px"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rlBottomBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rlBottom_Separate1" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Home"
+                        android:layout_alignBottom="@+id/rlBottom_Home" android:background="@drawable/footerseparator"/>
+        <RelativeLayout android:id="@+id/rlBottom_Packet" android:layout_width="90px"
+                        android:layout_height="fill_parent" android:background="@color/dark_gray"
+                        android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/imgBottom_Packet" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/packet" android:scaleType="fitCenter" android:padding="7px"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                        android:id="@+id/rlBottom_Centre" android:layout_toRightOf="@+id/rlBottom_Separate2"
+                        android:layout_toLeftOf="@+id/rlBottom_Packet" android:background="@color/dark_gray">
+            <Button android:layout_width="120px" android:layout_height="35px" android:text="@string/Articles_BuyNow"
+                    android:id="@+id/btnGoGoods" android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false" android:background="@drawable/specialbutton"
+                    android:textColor="@color/white" android:layout_centerInParent="true" android:textSize="18px"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_BackArraw" android:layout_width="104px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate1"
+                        android:layout_alignBottom="@+id/rlBottom_Separate1" android:background="@color/dark_gray">
+            <ImageView android:id="@+id/imgBottom_BackArraw" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/backarraw" android:padding="10px" android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_Separate2" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_BackArraw"
+                        android:layout_alignBottom="@+id/rlBottom_BackArraw"
+                        android:background="@drawable/footerseparator"/>
+        <RelativeLayout android:id="@+id/rlBottom_Separate4" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:background="@drawable/footerseparator"
+                        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

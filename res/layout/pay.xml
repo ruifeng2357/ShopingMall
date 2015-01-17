@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain" android:background="#f3f3f3">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:text="@string/Pay_MoneyToPay"
+            android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:paddingLeft="5px" android:gravity="center_vertical" android:textSize="22px"
+            android:background="@color/white"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="45px"
+            android:id="@+id/txtTotalMoney" android:layout_toRightOf="@+id/textView"
+            android:layout_alignTop="@+id/textView" android:gravity="center_vertical" android:textSize="22px"
+            android:textColor="@color/red" android:background="@color/white" android:text="0.00"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlBody" android:layout_margin="10px"
+            android:background="@drawable/frameback_5" android:layout_above="@+id/rlFooter"
+            android:layout_below="@+id/textView">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_PaymentStatement"
+                android:id="@+id/textView2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginLeft="15px" android:layout_marginTop="15px" android:textSize="22px"/>
+        <ImageView
+                android:layout_width="175px"
+                android:layout_height="55px"
+                android:id="@+id/imageView" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2" android:layout_marginTop="15px"
+                android:layout_marginLeft="5px" android:scaleType="fitCenter"
+                android:src="@drawable/lipinka" android:paddingLeft="35px" android:background="@drawable/frameback_6"
+                android:paddingRight="5px"/>
+        <ImageView
+                android:layout_width="175px"
+                android:layout_height="55px"
+                android:id="@+id/imageView1" android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageView" android:layout_marginRight="20px"
+                android:scaleType="fitCenter" android:paddingLeft="35px" android:src="@drawable/bangbi"
+                android:background="@drawable/frameback_6" android:paddingTop="5px" android:paddingBottom="2px"
+                android:paddingRight="5px"/>
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="55px" android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentTop="false" android:layout_marginTop="55px" android:orientation="horizontal"
+                android:showDividers="none" android:gravity="center_vertical">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="55px"
+                    android:id="@+id/rdGiftCard" android:layout_alignLeft="@+id/imageView"
+                    android:layout_alignTop="@+id/imageView" android:button="@drawable/btn_radio"
+                    android:layout_alignBottom="@+id/imageView" android:layout_marginLeft="10px"
+                    android:checked="true"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="55px"
+                    android:id="@+id/rdBangBi" android:layout_alignLeft="@+id/imageView1"
+                    android:layout_alignTop="@+id/imageView1" android:button="@drawable/btn_radio"
+                    android:layout_alignBottom="@+id/imageView1" android:layout_marginLeft="200px"/>
+        </RadioGroup>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="175px"
+                android:id="@+id/imageBack" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/imageView" android:layout_marginTop="20px"
+                android:layout_marginRight="15px" android:background="@drawable/frameback_4"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_GiftCardNo"
+                android:id="@+id/textView3" android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/imageBack" android:layout_marginLeft="25px"
+                android:layout_marginTop="30px" android:textSize="22px" android:textColor="#666666"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:id="@+id/edtGiftCardNo" android:layout_toRightOf="@+id/textView3"
+                android:textSize="20px"
+                android:background="@drawable/edittext_back" android:layout_alignBaseline="@+id/textView3"
+                android:paddingLeft="10px" android:paddingRight="10px" android:layout_alignRight="@+id/imageBack"
+                android:layout_marginRight="15px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_GiftCardPassword"
+                android:id="@+id/textView4" android:layout_alignLeft="@+id/textView3"
+                android:layout_marginTop="15px" android:textSize="22px" android:textColor="#666666"
+                android:layout_below="@+id/textView3"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:id="@+id/edtGiftCardPassword" android:layout_toRightOf="@+id/textView4"
+                android:textSize="20px"
+                android:background="@drawable/edittext_back" android:layout_alignBaseline="@+id/textView4"
+                android:paddingLeft="10px" android:paddingRight="10px" android:layout_alignRight="@+id/imageBack"
+                android:layout_marginRight="15px" android:singleLine="true" android:password="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_GiftCardBalance"
+                android:id="@+id/textView5" android:layout_alignLeft="@+id/textView4"
+                android:layout_marginTop="15px" android:textSize="22px" android:textColor="#666666"
+                android:layout_below="@+id/textView4"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="32px"
+                android:id="@+id/edtGiftCardBalance" android:layout_toRightOf="@+id/textView5"
+                android:textSize="20px"
+                android:background="@drawable/edittext_back"
+                android:paddingLeft="10px" android:paddingRight="10px"
+                android:singleLine="true" android:layout_alignTop="@+id/textView5"/>
+        <TextView
+                android:layout_width="115px"
+                android:layout_height="32px"
+                android:text="@string/Pay_InquireBalance"
+                android:id="@+id/txtLookBalance" android:layout_toRightOf="@+id/edtGiftCardBalance"
+                android:layout_marginLeft="10px" android:textSize="20px"
+                android:textColor="@color/white" android:gravity="center" android:background="#e34b00"
+                android:layout_alignTop="@+id/edtGiftCardBalance"
+                android:layout_marginBottom="3px"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="175px"
+                android:id="@+id/imageMask" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/imageView" android:layout_marginTop="20px"
+                android:layout_marginRight="15px" android:background="@drawable/maskimg"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_Notice1"
+                android:id="@+id/textView7" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/imageBack" android:layout_marginTop="20px" android:textSize="22px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtGiftCardBalance" android:layout_toRightOf="@+id/textView7"
+                android:layout_alignTop="@+id/textView7" android:textColor="@color/red" android:textSize="22px"
+                android:layout_marginLeft="10px"/>
+        <CheckBox
+                android:layout_width="27px"
+                android:layout_height="27px"
+                android:id="@+id/chkUseGiftCard" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="10px" android:button="@drawable/btn_check" android:checked="false"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_Notice2"
+                android:id="@+id/textView9"
+                android:textSize="22px"
+                android:layout_below="@+id/textView7" android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/chkUseGiftCard" android:layout_marginLeft="10px"/>
+        <EditText
+                android:inputType="number"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtGiftCardMoneyToUse" android:layout_toRightOf="@+id/textView9"
+                android:textSize="22px"
+                android:background="@drawable/edittext_back_3" android:layout_below="@+id/textView7"
+                android:layout_marginTop="8px" android:layout_marginLeft="5px" android:singleLine="true"
+                android:paddingLeft="5px" android:paddingRight="5px" android:textColor="@color/red"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_Notice3"
+                android:id="@+id/txtDescUse" android:layout_alignParentLeft="false" android:layout_marginLeft="5px"
+                android:layout_below="@+id/textView7" android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/edtGiftCardMoneyToUse" android:textSize="22px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_Notice4"
+                android:id="@+id/textView11" android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView9" android:textSize="22px" android:layout_marginTop="30px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMoneyNotPaid" android:layout_toRightOf="@+id/textView11"
+                android:layout_alignTop="@+id/textView11" android:textSize="22px" android:singleLine="true"
+                android:textColor="@color/red" android:layout_marginLeft="5px" android:text="0.00"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pay_Notice5"
+                android:id="@+id/textView13"
+                android:layout_alignTop="@+id/textView11" android:textSize="22px"
+                android:layout_toRightOf="@+id/txtMoneyNotPaid" android:layout_marginLeft="5px"/>
+
+        <ImageView
+                android:layout_width="175px"
+                android:layout_height="55px"
+                android:id="@+id/imageView4" android:layout_alignParentRight="false"
+                android:scaleType="fitCenter" android:paddingLeft="35px" android:src="@drawable/zhifubao"
+                android:background="@drawable/frameback_6" android:paddingTop="5px" android:paddingBottom="2px"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="15px" android:layout_alignLeft="@+id/textView11"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdZhiFuBao" android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView4" android:button="@drawable/btn_radio"
+                android:layout_alignBottom="@+id/imageView4" android:layout_marginLeft="10px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"
+                />
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+        <TextView
+                android:layout_width="185px"
+                android:layout_height="40px"
+                android:text="@string/Pay_Submit"
+                android:id="@+id/txtSubmitPay"
+                android:layout_alignRight="@+id/imageButton6"
+                android:background="@drawable/orange_btn_back_3"
+                android:gravity="center" android:textSize="22px" android:textColor="@color/white"
+                android:layout_marginRight="15px" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

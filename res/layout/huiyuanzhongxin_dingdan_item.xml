@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="464px"
+                android:layout_height="match_parent" android:id="@+id/rlItemMain" android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150px" android:id="@+id/rlOrderSummary">
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_DingDanHao"
+                android:id="@+id/textView" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:layout_marginTop="10px" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_TiJiaoShiJian"
+                android:id="@+id/textView1" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right" android:layout_below="@+id/textView"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_DingDanChaXun_PeiSongFangShi"
+                android:id="@+id/textView2" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right" android:layout_below="@+id/textView1"/>
+        <TextView
+                android:layout_width="110px"
+                android:layout_height="32px"
+                android:text="@string/HuiYuanZhongXin_DingDan_DingDanZhuangTai"
+                android:id="@+id/textView9" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false" android:textColor="#606060"
+                android:textSize="22px" android:gravity="right" android:layout_below="@+id/textView2"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="YLB001245478"
+                android:id="@+id/txtOrderNo" android:layout_toRightOf="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:textSize="22px"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2013-10-20 10:10:10"
+                android:id="@+id/txtOrderTime" android:layout_toRightOf="@+id/textView1"
+                android:layout_alignTop="@+id/textView1" android:layout_alignBottom="@+id/textView1"
+                android:textSize="22px"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="付款自提"
+                android:id="@+id/txtDistMethod" android:layout_toRightOf="@+id/textView2"
+                android:layout_alignTop="@+id/textView2" android:layout_alignBottom="@+id/textView2"
+                android:textSize="22px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待收货"
+                android:id="@+id/txtOrderStatus" android:layout_toRightOf="@+id/textView9"
+                android:layout_alignTop="@+id/textView9" android:layout_alignBottom="@+id/textView9"
+                android:textSize="22px" android:textColor="@color/red"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" android:layout_alignLeft="@+id/textView"
+                android:layout_alignParentBottom="true" android:background="@drawable/dotline_separator"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款"
+                android:id="@+id/btnOrderOperation1" android:layout_toRightOf="@+id/txtOrderStatus"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10px" android:layout_alignTop="@+id/txtOrderStatus"
+                android:layout_alignBottom="@+id/txtOrderStatus" android:textSize="22px"
+                android:background="@drawable/dark_orange_btn_back" android:paddingLeft="3px"
+                android:paddingRight="3px" android:gravity="center"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:id="@+id/btnOrderOperation2" android:layout_toRightOf="@+id/btnOrderOperation1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="3px" android:layout_alignTop="@+id/txtOrderStatus"
+                android:layout_alignBottom="@+id/txtOrderStatus" android:textSize="22px"
+                android:background="@drawable/gray_btn_back" android:paddingLeft="3px"
+                android:paddingRight="3px" android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlProductList" android:layout_below="@+id/rlOrderSummary">
+    </RelativeLayout>
+</RelativeLayout>

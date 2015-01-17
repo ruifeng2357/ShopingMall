@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#f3f3f3" android:id="@+id/rlMain">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:id="@+id/rlHeader">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/HuiYuanZhongXin_WoDeDingDan"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true" android:background="@drawable/titleback"
+                android:textColor="@android:color/white" android:gravity="center_vertical|left" android:paddingLeft="10px"
+                android:textSize="27px"/>
+        <ImageButton
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnRefresh" android:layout_alignRight="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:scaleType="fitCenter" android:src="@drawable/refresh"
+                android:background="@android:color/transparent" android:padding="5px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlBody" android:layout_marginLeft="5px"
+            android:layout_marginTop="10px" android:layout_marginRight="5px" android:layout_marginBottom="10px"
+            android:layout_below="@+id/rlHeader" android:layout_above="@+id/rlFooter"
+            android:background="@drawable/frameback">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:id="@+id/imageView9" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="42px" android:background="@drawable/line_separator"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="43px"
+                android:id="@+id/imageView" android:layout_alignParentLeft="true" android:layout_marginLeft="8px"
+                android:layout_alignParentTop="true" android:background="@drawable/tab_divider"/>
+        <TextView
+                android:layout_width="112px"
+                android:layout_height="43px"
+                android:id="@+id/txtTab1" android:layout_toRightOf="@+id/imageView"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_active"
+                android:textSize="22px" android:text="@string/HuiYuanZhongXin_DingDan_DaiFuKuan"
+                android:gravity="center" android:textStyle="bold" android:textColor="@color/black"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="43px"
+                android:id="@+id/imageView2" android:layout_toRightOf="@+id/txtTab1"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_divider"/>
+        <TextView
+                android:layout_width="112px"
+                android:layout_height="43px"
+                android:id="@+id/txtTab2" android:layout_toRightOf="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_inactive"
+                android:textSize="22px" android:textColor="#606060"
+                android:text="@string/HuiYuanZhongXin_DingDan_DaiFaHuo" android:gravity="center"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="43px"
+                android:id="@+id/imageView4" android:layout_toRightOf="@+id/txtTab2"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_divider"/>
+        <TextView
+                android:layout_width="112px"
+                android:layout_height="43px"
+                android:id="@+id/txtTab3" android:layout_toRightOf="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_inactive"
+                android:textSize="22px" android:textColor="#606060"
+                android:text="@string/HuiYuanZhongXin_DingDan_DaiShouHuo" android:gravity="center"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="43px"
+                android:id="@+id/imageView6" android:layout_toRightOf="@+id/txtTab3"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_divider"/>
+        <TextView
+                android:layout_width="112px"
+                android:layout_height="43px"
+                android:id="@+id/txtTab4" android:layout_toRightOf="@+id/imageView6"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_inactive"
+                android:textSize="22px" android:textColor="#606060"
+                android:text="@string/HuiYuanZhongXin_DingDan_DaiPingJia" android:gravity="center"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="43px"
+                android:id="@+id/imageView8" android:layout_toRightOf="@+id/txtTab4"
+                android:layout_alignTop="@+id/imageView" android:background="@drawable/tab_divider"/>
+
+        <com.damytech.Utils.PullToRefreshListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/imageView9"
+                android:id="@+id/lstOrders4"
+                android:layout_margin="3px"
+                android:background="@color/white"/>
+        <com.damytech.Utils.PullToRefreshListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/imageView9"
+                android:id="@+id/lstOrders3"
+                android:layout_margin="3px"
+                android:background="@color/white"/>
+        <com.damytech.Utils.PullToRefreshListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/imageView9"
+                android:id="@+id/lstOrders2"
+                android:layout_margin="3px"
+                android:background="@color/white"/>
+        <com.damytech.Utils.PullToRefreshListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/imageView9"
+                android:id="@+id/lstOrders1"
+                android:layout_margin="3px"
+                android:background="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="93px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton5"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"/>
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton5"/>
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton7"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="7px" android:layout_toRightOf="@+id/imageButton6"/>
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnAccount"
+                android:layout_alignParentBottom="true" android:background="@color/orange" android:scaleType="fitCenter"
+                android:src="@drawable/personinfo" android:padding="10px" android:layout_toRightOf="@+id/imageButton7"/>
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+    </RelativeLayout>
+</RelativeLayout>

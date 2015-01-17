@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="820px" android:id="@+id/rlSpecialMainItem">
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="30px" android:background="#CCCCCC"
+                    android:id="@+id/rlMainTitle">
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                  android:id="@+id/txtTypeTitle"
+                  android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                  android:layout_marginLeft="10px" android:textColor="@color/black" android:textSize="20px"
+                  android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="180px" android:id="@+id/rlGroup1"
+                    android:layout_below="@+id/rlMainTitle" android:background="@color/white">
+        <ImageView android:layout_width="150px" android:layout_height="150px" android:id="@+id/imgItem1"
+                   android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                   android:layout_marginTop="15px" android:layout_marginLeft="30px" android:src="@drawable/ic_stub"
+                   android:scaleType="fitXY"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="60px"
+                  android:id="@+id/txtItem1Title"
+                  android:layout_toRightOf="@+id/imgItem1" android:layout_alignParentTop="false"
+                  android:layout_marginTop="30px" android:textColor="@color/black" android:lines="2"
+                  android:ellipsize="end" android:textSize="22px" android:layout_marginLeft="15px" android:text="移乐邦商品"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/str_money_yuansymbol" android:id="@+id/txtItem1Yuan"
+                  android:textColor="@color/red" android:textSize="24px" android:layout_below="@+id/txtItem1Title"
+                  android:layout_alignLeft="@+id/txtItem1Title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/txtItem1Price" android:textColor="@color/red" android:textSize="24px"
+                  android:layout_below="@+id/txtItem1Title" android:layout_toRightOf="@+id/txtItem1Yuan"
+                  android:text="20"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="470px" android:id="@+id/rlGroup2"
+                    android:layout_below="@+id/rlGroup1" android:layout_marginTop="10px">
+        <ImageView android:layout_width="230px" android:layout_height="230px" android:id="@+id/imgArticle1"
+                   android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="230px" android:layout_height="230px" android:id="@+id/imgArticle2"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY" android:layout_alignParentRight="true"
+                   android:layout_alignTop="@+id/imgArticle1"/>
+        <ImageView android:layout_width="230px" android:layout_height="230px" android:id="@+id/imgArticle3"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY" android:layout_alignLeft="@+id/imgArticle1"
+                   android:layout_alignParentBottom="true"/>
+        <ImageView android:layout_width="230px" android:layout_height="230px" android:id="@+id/imgArticle4"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY"
+                   android:layout_alignRight="@+id/imgArticle2" android:layout_alignBottom="@+id/imgArticle3"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110px" android:layout_alignLeft="@+id/rlMainTitle"
+            android:layout_below="@+id/rlGroup2" android:layout_marginTop="10px">
+        <ImageView
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:id="@+id/imgArticle5" android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                android:src="@drawable/ic_stub" android:scaleType="fitXY"/>
+        <ImageView android:layout_width="110px" android:layout_height="110px" android:id="@+id/imgArticle6"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY" android:layout_toRightOf="@+id/imgArticle5"
+                   android:layout_alignTop="@+id/imgArticle5" android:layout_marginLeft="10px"/>
+        <ImageView android:layout_width="110px" android:layout_height="110px" android:id="@+id/imgArticle7"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY" android:layout_toRightOf="@+id/imgArticle6"
+                   android:layout_alignTop="@+id/imgArticle5" android:layout_marginLeft="10px"/>
+        <ImageView android:layout_width="110px" android:layout_height="110px" android:id="@+id/imgArticle8"
+                   android:src="@drawable/ic_stub" android:scaleType="fitXY" android:layout_toRightOf="@+id/imgArticle7"
+                   android:layout_alignTop="@+id/imgArticle5" android:layout_marginLeft="10px"/>
+    </RelativeLayout>
+</RelativeLayout>

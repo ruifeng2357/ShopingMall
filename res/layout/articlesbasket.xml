@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlArticlesBasketMain">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlBody" android:layout_above="@+id/rlBottomBar"
+            android:background="@color/white">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:text="@string/Articles_Basket_Title"
+                android:id="@+id/txtTitle"
+                android:textColor="@color/red" android:textSize="26px"
+                android:layout_marginLeft="5px" android:layout_marginTop="5px" android:layout_alignParentTop="false"
+                />
+        <ImageView
+                android:layout_width="24px"
+                android:layout_height="30px"
+                android:id="@+id/imgCount" android:layout_toRightOf="@+id/txtTitle" android:layout_alignParentTop="false"
+                android:src="@drawable/red_circle" android:scaleType="fitCenter"
+                android:layout_alignTop="@+id/txtTitle" android:layout_marginLeft="10px" android:layout_marginTop="2px"/>
+        <TextView
+                android:layout_width="24px"
+                android:layout_height="30px"
+                android:id="@+id/txtCount" android:layout_alignLeft="@+id/imgCount"
+                android:layout_alignTop="@+id/imgCount" android:textColor="@color/white" android:gravity="center"
+                android:textSize="16px"/>
+        <CheckBox
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:id="@+id/chkSelectAll" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/txtTitle"
+                android:button="@drawable/btn_check" android:layout_marginTop="10px" android:checked="false"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:text="@string/Articles_Basket_AllChip"
+                android:id="@+id/txtAllPriceHead" android:layout_toRightOf="@+id/chkSelectAll"
+                android:layout_alignTop="@+id/chkSelectAll" android:textColor="@color/black" android:textSize="24px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/str_money_yuansymbol" android:id="@+id/txtChipHead" android:textColor="@color/red"
+                  android:textSize="24px"
+                  android:layout_toRightOf="@+id/txtAllPriceHead" android:layout_alignTop="@+id/chkSelectAll"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="310.25"
+                  android:id="@+id/txtChip" android:textColor="@color/red" android:textSize="24px"
+                  android:layout_toRightOf="@+id/txtChipHead" android:layout_alignTop="@+id/chkSelectAll"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                  android:text="@string/Articles_Basket_Price" android:id="@+id/txtArticlePriceHead"
+                  android:textColor="@color/gray" android:textSize="20px"
+                  android:layout_toRightOf="@+id/chkSelectAll" android:layout_below="@+id/chkSelectAll"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/str_money_yuansymbol" android:id="@+id/txtArtPriceYuan"
+                  android:textColor="@color/red" android:textSize="20px"
+                  android:layout_toRightOf="@+id/txtArticlePriceHead" android:layout_below="@+id/chkSelectAll"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="310.25"
+                  android:id="@+id/txtArtPrice" android:textColor="@color/red" android:textSize="20px"
+                  android:layout_toRightOf="@+id/txtArtPriceYuan" android:layout_below="@+id/chkSelectAll"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30px"
+                  android:text="@string/Articles_Basket_VaryPrice" android:id="@+id/txtVaryPriceHead"
+                  android:textColor="@color/gray" android:textSize="20px"
+                  android:layout_toRightOf="@+id/txtArtPrice" android:layout_below="@+id/chkSelectAll"
+                  android:layout_marginLeft="20px" android:visibility="gone"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"
+                  android:id="@+id/txtVaryPrice" android:textColor="@color/red" android:textSize="20px"
+                  android:layout_toRightOf="@+id/txtVaryPriceHead" android:layout_below="@+id/chkSelectAll"
+                  android:visibility="gone"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10px" android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtArticlePriceHead" android:layout_marginTop="5px"
+                android:id="@+id/rlSeperator" android:background="@drawable/grayline">
+        </RelativeLayout>
+        <ListView android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/listBasketItems"
+              android:layout_alignLeft="@+id/rlSeperator" android:layout_below="@+id/rlSeperator"
+              android:layout_marginLeft="5px" android:layout_marginTop="5px" android:layout_marginRight="5px"
+              android:layout_marginBottom="5px"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlBottomBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rlBottom_Separate1" android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/footerseparator"/>
+        <RelativeLayout android:id="@+id/rlBottom_Packet" android:layout_width="90px"
+                        android:layout_height="fill_parent" android:background="@color/dark_gray"
+                        android:layout_alignParentRight="false" android:layout_toRightOf="@+id/rlBottom_Separate2">
+            <ImageView android:id="@+id/imgBottom_Packet" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/recycle" android:scaleType="fitCenter" android:padding="7px"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                        android:id="@+id/rlBottom_Centre" android:layout_toRightOf="@+id/rlBottom_Packet"
+                        android:background="@color/dark_gray">
+            <Button android:layout_width="120px" android:layout_height="40px" android:text="@string/Articles_Basket_Calculate"
+                    android:id="@+id/btnGoGoods" android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false" android:background="@drawable/specialbutton"
+                    android:textColor="@color/white" android:layout_centerInParent="true" android:textSize="27px"
+                    android:layout_alignParentRight="true" android:layout_marginRight="10px"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_BackArraw" android:layout_width="104px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate1"
+                        android:layout_alignBottom="@+id/rlBottom_Separate1" android:background="@color/dark_gray"
+                        android:padding="10px">
+            <ImageView android:id="@+id/imgBottom_BackArraw" android:layout_width="fill_parent"
+                       android:layout_height="fill_parent" android:layout_centerInParent="true"
+                       android:src="@drawable/backarraw" android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlBottom_Separate2" android:layout_width="3px"
+                        android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_BackArraw"
+                        android:layout_alignBottom="@+id/rlBottom_BackArraw"
+                        android:background="@drawable/footerseparator"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRegisterRequestVerifySMSLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/registerrequestverifysmsback"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestVerifySMS_RoundNumber1"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="210px"
+        android:src="@drawable/round_blackone" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestVerifySMS_PhoneNumber"
+        android:layout_width="130px"
+        android:layout_height="30px"
+        android:layout_alignTop="@+id/imgRegisterRequestVerifySMS_RoundNumber1"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/imgRegisterRequestVerifySMS_RoundNumber1"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterRequestSMS_PhoneNumber"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestVerifySMS_RoundNumber2"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignTop="@+id/lblRegisterRequestVerifySMS_PhoneNumber"
+        android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_PhoneNumber"
+        android:src="@drawable/round_redtwo" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestVerifySMS_SMSVerify"
+        android:layout_width="90px"
+        android:layout_height="30px"
+        android:layout_alignBottom="@+id/imgRegisterRequestVerifySMS_RoundNumber2"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/imgRegisterRequestVerifySMS_RoundNumber2"
+        android:text="@string/RegisterRequestSMS_SMSVerify"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/imgRegisterRequestVerifySMS_RoundNumber3"
+        android:layout_width="29px"
+        android:layout_height="29px"
+        android:layout_alignTop="@+id/imgRegisterRequestVerifySMS_RoundNumber2"
+        android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_SMSVerify"
+        android:src="@drawable/round_blackthree" />
+
+    <TextView
+        android:id="@+id/lblRegisterRequestVerifySMS_Complete"
+        android:layout_width="50px"
+        android:layout_height="30px"
+        android:layout_marginLeft="5px"
+        android:layout_alignBaseline="@+id/lblRegisterRequestVerifySMS_SMSVerify"
+        android:layout_alignBottom="@+id/lblRegisterRequestVerifySMS_SMSVerify"
+        android:layout_toRightOf="@+id/imgRegisterRequestVerifySMS_RoundNumber3"
+        android:text="@string/RegisterRequestSMS_Complete"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+    
+    <RelativeLayout
+        android:id="@+id/rlRegisterRequestVerifySMS_UserName"
+        android:layout_width="405px"
+        android:layout_height="55px"
+        android:layout_below="@+id/imgRegisterRequestVerifySMS_RoundNumber1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25px"
+        android:background="@drawable/white_little_round" >
+
+        <TextView
+            android:id="@+id/lblRegisterRequestVerifySMS_UserName"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/Login_UserName"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/lblRegisterRequestVerifySMS_UserNameValue"
+            android:layout_width="265px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_UserName"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlRegisterRequestVerifySMS_Password"
+        android:layout_width="405px"
+        android:layout_height="55px"
+        android:layout_below="@+id/rlRegisterRequestVerifySMS_UserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:background="@drawable/white_little_round" >
+
+        <TextView
+            android:id="@+id/lblRegisterRequestVerifySMS_Password"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/Login_Password"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtRegisterRequestVerifySMS_PasswordValue"
+            android:layout_width="265px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_Password"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlRegisterRequestVerifySMS_RePassword"
+        android:layout_width="405px"
+        android:layout_height="55px"
+        android:layout_below="@+id/rlRegisterRequestVerifySMS_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:background="@drawable/white_little_round" >
+
+        <TextView
+            android:id="@+id/lblRegisterRequestVerifySMS_RePassword"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/RegisterRequestVerifySMS_RePassword"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtRegisterRequestVerifySMS_RePasswordValue"
+            android:layout_width="265px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_RePassword"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlRegisterRequestVerifySMS_VerifySMS"
+        android:layout_width="405px"
+        android:layout_height="55px"
+        android:layout_below="@+id/rlRegisterRequestVerifySMS_RePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:background="@drawable/white_little_round" android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblRegisterRequestVerifySMS_VerifySMS"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/RegisterRequestVerifySMS_SMSVerify"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtRegisterRequestVerifySMS_VerifySMSValue"
+            android:layout_width="265px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_VerifySMS"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlRegisterRequestVerifySMS_RecommendPhoneNumber"
+        android:layout_width="405px"
+        android:layout_height="55px"
+        android:layout_below="@+id/rlRegisterRequestVerifySMS_VerifySMS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:background="@drawable/white_little_round" >
+
+        <TextView
+            android:id="@+id/lblRegisterRequestVerifySMS_RecommendPhoneNumber"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/RegisterRequestVerifySMS_RecommendPhoneNum"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtRegisterRequestVerifySMS_RecommendPhoneNumberValue"
+            android:layout_width="265px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblRegisterRequestVerifySMS_RecommendPhoneNumber"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:paddingLeft="10px"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRegisterRequestVerify_Send"
+        android:layout_width="280px"
+        android:layout_height="70px"
+        android:layout_below="@+id/rlRegisterRequestVerifySMS_RecommendPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35px"
+        android:background="@drawable/orangebutton"
+        android:text="@string/RegisterRequestVerifySMS_Send"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

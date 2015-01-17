@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.damytech.yilebang"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+    <application
+        android:name="com.damytech.Global.UILApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <receiver android:name="com.damytech.yilebang.BootReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:enabled="true" android:name="com.damytech.yilebang.NewsService" />
+
+        <activity
+            android:name="com.damytech.yilebang.MainActivity"
+        	android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>        
+        <activity android:name="com.damytech.yilebang.LoginActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.damytech.yilebang.RegisterRequestSMSActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.damytech.yilebang.RegisterRequestVerifySMSActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.damytech.yilebang.BaseServiceActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.damytech.yilebang.MainMenuActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.damytech.yilebang.PersonInfoActivity"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+        		  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialDetActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialMapActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialInfoActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialListMainActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialListDetailActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PreferentialListInfoActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.EarnMoneyActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.SpecialArticleActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.SpecialArticleMainActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.SpecialArticleListActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.ArticlesActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.ArticlesEvalDetailActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.ArticlesAskDetailActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.ArticlesMapActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.ArticlesBasketActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <activity android:name="com.damytech.yilebang.OrderConfirmActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.OrderDetailActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.PaymentActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.BangKe_JiLuActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.BangKe_ShenQing_1Activity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.BangKe_ShenQing_2Activity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.BangKeActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.BangKeZhongXinActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.DingDanActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.DingDan_PingJiaActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.DingDanZhuangTaiChaXunActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.DiZhiGuanLiActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.DiZhiGuanLi_EditActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.SelectReceiverActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.HuiYuanZhongXinActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:launchMode="singleTask"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.JianYiActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.JianYiDetailActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.LiPinKa_JiHuoActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.LiPinKa_LieBiaoActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.LiPinKaActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.PingLun_ZiXunActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.PingLunActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.ShouCangActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.XiaoXiActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.XiuGaiMiMaActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.WangJiMiMaActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.YouHuiQuanActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.google.zxing.client.android.CaptureActivity"
+                  android:screenOrientation="landscape"
+                  android:clearTaskOnLaunch="true"
+                  android:stateNotNeeded="true"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:launchMode="singleTask"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="zxing.appspot.com" android:path="/scan"/>
+            </intent-filter>
+            <!-- We also support a Google Product Search URL. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="www.google.com" android:path="/m/products/scan"/>
+            </intent-filter>
+            <!-- And the UK version. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="www.google.co.uk" android:path="/m/products/scan"/>
+            </intent-filter>
+            <!-- Support zxing://scan/?... like iPhone app -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zxing" android:host="scan" android:path="/"/>
+            </intent-filter>
+
+         </activity>
+
+        <activity android:name="com.google.zxing.client.android.PreferencesActivity"
+                  android:label="@string/preferences_name"
+                  android:launchMode="singleTask"
+                  android:stateNotNeeded="true">
+        </activity>
+
+        <!--activity
+                android:name="cn.sharesdk.framework.AuthorizeActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity-->
+        <activity
+                android:name="cn.sharesdk.onekeyshare.ShareAllGird"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+                android:name="cn.sharesdk.onekeyshare.SharePage"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 微信分享回调 -->
+        <activity
+                android:name="com.damytech.yilebang.onekeyshare.wxapi.WXEntryActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait" />
+        <!-- 易信分享回调 -->
+
+
+        <activity android:name="com.damytech.yilebang.HuiYuanZhongXin.SelectPhotoActivity"
+            android:label="@string/preferences_name"
+            android:stateNotNeeded="true"
+            android:theme = "@style/KHM_Transparent">
+        </activity>
+
+        <activity
+                android:name="cn.sharesdk.framework.ShareSDKUIShell"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:windowSoftInputMode="stateHidden|adjustResize" >
+                <!--
+                    AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+                    的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+                    开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+                -->
+                <meta-data android:name="AuthorizeAdapter" android:value="cn.sharesdk.demo.MyAdapter" />
+                <intent-filter>
+                    <data android:scheme="db-7janx53ilz11gbs" />
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.BROWSABLE"/>
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

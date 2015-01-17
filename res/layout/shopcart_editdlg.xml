@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="400px"
+                android:layout_height="220px" android:id="@+id/rlShopCartEditDlgMain" android:background="@drawable/popupdlg_back">
+
+    <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:id="@+id/imgbtnminus"
+            android:src="@drawable/minusicon"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="65px" android:layout_alignParentTop="true"
+            android:layout_marginTop="60px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:text="修改购物车"
+            android:id="@+id/txtTitle"
+            android:layout_alignTop="@+id/chkSelectItem" android:layout_marginLeft="10px"
+            android:textColor="@color/black" android:textSize="22px" android:lines="2" android:ellipsize="end"
+            android:gravity="top" android:layout_marginTop="10px"/>
+    <TextView
+            android:layout_width="121dp"
+            android:layout_height="25px"
+            android:text="10"
+            android:id="@+id/editCount"
+            android:background="@drawable/basket_count" android:gravity="center"
+            android:textSize="22px" android:textColor="@color/gray" android:layout_toRightOf="@+id/imgbtnminus"
+            android:layout_alignTop="@+id/imgbtnminus" android:layout_alignBottom="@+id/imgbtnminus"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/str_money_yuansymbol" android:id="@+id/txtYuan" android:textColor="@color/red"
+              android:textSize="22px"
+              android:layout_alignParentLeft="true" android:layout_marginLeft="250px"
+              android:layout_alignTop="@+id/txtTitle"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="310.25"
+              android:id="@+id/txtPrice" android:textColor="@color/red" android:textSize="22px"
+              android:layout_centerHorizontal="true" android:layout_alignTop="@+id/txtTitle"
+              android:layout_toRightOf="@+id/txtYuan"/>
+    <ImageView android:layout_width="50px" android:layout_height="50px" android:id="@+id/imgbtnplus"
+               android:src="@drawable/plusicon" android:scaleType="fitXY"
+               android:layout_toRightOf="@+id/editCount" android:layout_alignTop="@+id/imgbtnminus"/>
+    <Button android:layout_width="120px" android:layout_height="40px" android:id="@+id/btnCancel"
+               android:scaleType="fitXY"
+               android:layout_alignParentLeft="true" android:layout_marginLeft="73px"
+               android:layout_alignParentTop="true" android:layout_marginTop="152px"
+               android:background="@drawable/btn_cancel"/>
+    <Button android:layout_width="120px" android:layout_height="40px" android:id="@+id/btnConfirm"
+               android:scaleType="fitXY"
+               android:layout_alignParentLeft="true" android:layout_marginLeft="214px"
+               android:layout_alignTop="@+id/btnCancel" android:background="@drawable/btn_confirm"/>
+</RelativeLayout>

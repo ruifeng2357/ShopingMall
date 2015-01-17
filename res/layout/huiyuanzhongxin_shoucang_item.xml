@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="140px" android:background="#f3f3f3" android:id="@+id/rlItemMain">
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:id="@+id/imageView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:src="@drawable/frameback" android:scaleType="fitXY" android:layout_margin="10px"/>
+    <CheckBox
+            android:layout_width="30px"
+            android:layout_height="32px"
+            android:id="@+id/chkSelector" android:layout_alignParentLeft="false" android:layout_marginLeft="10px"
+            android:layout_alignParentTop="false" android:layout_marginTop="10px"
+            android:layout_alignLeft="@+id/imageView" android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentBottom="false" android:button="@drawable/btn_check"/>
+    <ImageView
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgProduct" android:layout_toRightOf="@+id/chkSelector"
+            android:layout_alignTop="@+id/chkSelector" android:layout_alignBottom="@+id/imageView"
+            android:layout_marginBottom="10px" android:padding="5px" android:scaleType="fitCenter"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="New Text"
+            android:id="@+id/txtProductDesc" android:layout_toRightOf="@+id/imgProduct"
+            android:layout_alignTop="@+id/chkSelector" android:textSize="22px"
+            android:layout_alignRight="@+id/imageView" android:layout_marginRight="10px"/>
+    <TextView
+            android:layout_width="250px"
+            android:layout_height="40px"
+            android:text="$10.90"
+            android:id="@+id/txtProductCost" android:layout_toRightOf="@+id/imgProduct"
+            android:layout_below="@+id/txtProductDesc" android:textSize="22px" android:textColor="@color/red"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgMoreDetail" android:layout_alignRight="@+id/imageView"
+            android:layout_below="@+id/txtProductDesc" android:layout_toRightOf="@+id/txtProductCost"
+            android:layout_alignBottom="@+id/txtProductCost" android:background="@android:color/transparent"
+            android:scaleType="fitCenter" android:src="@drawable/directionicon" android:padding="10px"/>
+</RelativeLayout>

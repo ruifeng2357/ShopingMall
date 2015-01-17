@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLeGouShangChengBigKindLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/soft_soft_gray"
+    tools:context="com.damytech.yilebang.LeGouShangChengBigKindActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/legoushangchengtitle" >
+
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

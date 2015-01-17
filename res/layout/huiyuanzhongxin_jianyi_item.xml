@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="160px" android:id="@+id/rlItemMain">
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:id="@+id/imageView" android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+            android:layout_margin="5px" android:background="@drawable/frameback"/>
+    <TextView
+            android:layout_width="70px"
+            android:layout_height="25px"
+            android:text="@string/HuiYuanZhongXin_JianYi_ZhuTi"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="25px" android:layout_marginTop="15px"
+            android:textSize="22px" android:textColor="@color/black"/>
+    <TextView
+            android:layout_width="350px"
+            android:layout_height="25px"
+            android:id="@+id/txtSubject"
+            android:textSize="22px"
+            android:singleLine="true"
+            android:textColor="#606060" android:layout_marginTop="15px" android:layout_marginLeft="100px"/>
+    <TextView
+            android:layout_width="70px"
+            android:layout_height="25px"
+            android:text="@string/HuiYuanZhongXin_JianYi_NeiRong"
+            android:id="@+id/textView6"
+            android:textSize="22px" android:layout_marginTop="50px"
+            android:textColor="@color/black" android:layout_marginLeft="25px"/>
+    <TextView
+            android:layout_width="350px"
+            android:layout_height="60px"
+            android:id="@+id/txtContent"
+            android:textSize="22px"
+            android:singleLine="true"
+            android:textColor="#606060" android:layout_marginLeft="100px" android:layout_marginTop="50px"/>
+    <TextView
+            android:layout_width="430px"
+            android:layout_height="25px"
+            android:id="@+id/txtSubmitTime"
+            android:textSize="20px" android:textColor="#909090"
+            android:singleLine="true"
+            android:layout_marginTop="120px" android:layout_marginLeft="25px"/>
+</RelativeLayout>

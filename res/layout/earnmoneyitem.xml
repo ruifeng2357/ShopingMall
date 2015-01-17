@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="170px" android:id="@+id/rlEarnmoneyItem" android:background="@color/white">
+
+    <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imgItemPic" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:src="@drawable/bmp5" android:scaleType="fitXY"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            android:id="@+id/txtTitle" android:layout_toRightOf="@+id/imgItemPic"
+            android:layout_alignTop="@+id/imgItemPic" android:layout_marginLeft="20px" android:textSize="22px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/EarnMoney_PreferMoney" android:id="@+id/txtValueHead"
+              android:textColor="@color/gray"
+              android:textSize="18px" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/txtTitle"
+            />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/str_money_yuansymbol" android:id="@+id/txtValueYuan" android:textColor="@color/red"
+              android:textSize="22px"
+              android:layout_below="@+id/txtTitle"
+              android:layout_toRightOf="@+id/txtValueHead" android:layout_alignBaseline="@+id/txtValueHead"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"
+              android:id="@+id/txtValue" android:textColor="@color/red" android:textSize="22px"
+              android:layout_below="@+id/txtTitle" android:layout_toRightOf="@+id/txtValueYuan"
+              android:layout_alignBaseline="@+id/txtValueHead"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/EarnMoney_Profit" android:id="@+id/txtProfitHead"
+              android:textColor="#FF4422" android:textSize="18px"
+              android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/txtValueHead"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="0.50" android:id="@+id/txtProfit" android:textColor="#FF4422"
+              android:textSize="18px"
+              android:layout_toRightOf="@+id/txtProfitHead" android:layout_below="@+id/txtValueHead"
+              android:layout_marginLeft="5px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/str_money_yuan" android:id="@+id/txtProfitYuan" android:textColor="#FF4422"
+              android:textSize="18px"
+              android:layout_toRightOf="@+id/txtProfit" android:layout_below="@+id/txtValueHead"/>
+    <RelativeLayout
+            android:layout_width="36px"
+            android:layout_height="45px" android:layout_alignLeft="@+id/imgItemPic"
+            android:layout_alignTop="@+id/imgItemPic" android:background="@drawable/ticket_red"
+            android:id="@+id/rlImgNumber">
+        <TextView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:text="1"
+                android:id="@+id/txtNumber" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:textColor="#CCCCCC" android:gravity="center"/>
+    </RelativeLayout>
+    <Button
+            android:layout_width="100px"
+            android:layout_height="38px"
+            android:id="@+id/btnSaveHis" android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtProfitHead" android:layout_marginTop="3px"
+            android:background="@drawable/savehistory"/>
+    <Button android:layout_width="120px" android:layout_height="38px" android:id="@+id/btnShare"
+            android:background="@drawable/sharemy" android:layout_toRightOf="@+id/btnSaveHis"
+            android:layout_alignTop="@+id/btnSaveHis"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20px" android:layout_alignParentBottom="false" android:background="@color/white"
+            android:layout_marginTop="150px">
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLoginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginback"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.damytech.yilebang.LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlLogin_UserName"
+        android:layout_width="405px"
+        android:layout_height="60px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265px"
+        android:background="@drawable/white_round" >
+
+        <TextView
+            android:id="@+id/lblLogin_UserName"
+            android:layout_width="125px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/Login_UserName"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtLogin_UserNameValue"
+            android:layout_width="280px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblLogin_UserName"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLogin_Password"
+        android:layout_width="405px"
+        android:layout_height="60px"
+        android:layout_alignLeft="@+id/rlLogin_UserName"
+        android:layout_below="@+id/rlLogin_UserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:background="@drawable/white_round" >
+
+        <TextView
+            android:id="@+id/lblLogin_Password"
+            android:layout_width="125px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/Login_Password"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+        <EditText
+            android:id="@+id/txtLogin_PasswordValue"
+            android:layout_width="280px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblLogin_Password"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10px"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin_Login"
+        android:layout_width="197px"
+        android:layout_height="65px"
+        android:layout_alignLeft="@+id/rlLogin_Password"
+        android:layout_below="@+id/rlLogin_Password"
+        android:layout_marginTop="45px"
+        android:background="@drawable/orangebutton"
+        android:text="@string/Login_Login"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnLogin_Register"
+        android:layout_width="197px"
+        android:layout_height="65px"
+        android:layout_alignBottom="@+id/btnLogin_Login"
+        android:layout_alignRight="@+id/rlLogin_Password"
+        android:background="@drawable/yellowbutton"
+        android:text="@string/Login_Register"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/lblLogin_Skip"
+        android:layout_width="100px"
+        android:layout_height="40px"
+        android:layout_alignRight="@+id/btnLogin_Register"
+        android:layout_below="@+id/btnLogin_Register"
+        android:layout_marginTop="25px"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Login_Skip"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

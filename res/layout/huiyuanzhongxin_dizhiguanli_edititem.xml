@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="445px"
+                android:layout_height="475px" android:background="@drawable/popupdlg_back" android:paddingLeft="15px"
+                android:paddingTop="20px" android:paddingRight="15px" android:paddingBottom="20px" android:id="@+id/rlDlgMain">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_DiZhiGuanLi_XinZengShouHuoRenXinXi"
+            android:id="@+id/txtTitle" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:textSize="24px" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_DiZhiGuanLi_ShouHuoRen"
+            android:id="@+id/textView1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="45px" android:textColor="#606060" android:textSize="22px"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35px"
+            android:id="@+id/edtReceiverName" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/textView1"
+            android:textSize="22px" android:background="@drawable/edittext_back" android:gravity="center_vertical"
+            android:paddingLeft="5px" android:layout_marginTop="3px" android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HuiYuanZhongXin_DiZhiGuanLi_DianHua"
+        android:id="@+id/textView2" android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+        android:textColor="#606060" android:textSize="22px" android:layout_below="@+id/edtReceiverName"
+        android:layout_marginTop="10px"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35px"
+            android:id="@+id/edtReceiverPhone" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/textView2"
+            android:textSize="22px" android:background="@drawable/edittext_back" android:gravity="center_vertical"
+            android:paddingLeft="5px" android:layout_marginTop="3px" android:singleLine="true"
+            android:inputType="phone"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_DiZhiGuanLi_DiZhi"
+            android:id="@+id/textView3" android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+            android:textColor="#606060" android:textSize="22px" android:layout_below="@+id/edtReceiverPhone"
+            android:layout_marginTop="10px"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="75px"
+            android:id="@+id/edtRemark" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/spinProvince"
+            android:textSize="22px" android:background="@drawable/edittext_back"
+            android:layout_marginTop="15px" android:gravity="top" android:padding="5px"/>
+    <Spinner
+            android:layout_width="115px"
+            android:layout_height="40px"
+            android:id="@+id/spinProvince" android:layout_below="@+id/textView3"
+            android:layout_marginTop="3px" android:gravity="center_vertical"
+            android:background="@drawable/combobox_back" android:paddingLeft="5px" android:paddingRight="30px"
+            android:textSize="22px" android:layout_alignLeft="@+id/txtTitle" android:singleLine="true"/>
+    <Spinner
+            android:layout_width="115px"
+            android:layout_height="40px"
+            android:id="@+id/spinCity" android:layout_below="@+id/textView3"
+            android:layout_marginTop="3px" android:gravity="center_vertical"
+            android:background="@drawable/combobox_back" android:paddingLeft="5px" android:paddingRight="30px"
+            android:textSize="22px" android:layout_toRightOf="@+id/spinProvince" android:layout_marginLeft="15px"
+            android:singleLine="true"/>
+    <Spinner
+            android:layout_width="115px"
+            android:layout_height="40px"
+            android:id="@+id/spinDistrict" android:layout_below="@+id/textView3"
+            android:layout_marginTop="3px" android:gravity="center_vertical"
+            android:background="@drawable/combobox_back" android:paddingLeft="5px" android:paddingRight="30px"
+            android:textSize="22px" android:layout_toRightOf="@+id/spinCity" android:layout_marginLeft="15px"
+            android:singleLine="true"/>
+    <TextView
+            android:layout_width="395px"
+            android:layout_height="45px"
+            android:text="@string/HuiYuanZhongXin_DiZhiGuanLi_TiJiaoXinZeng"
+            android:id="@+id/txtSubmit" android:layout_alignParentTop="false"
+            android:layout_marginTop="20px" android:layout_below="@+id/edtRemark"
+            android:layout_centerHorizontal="true" android:textSize="24px" android:textColor="@color/white"
+            android:gravity="center" android:background="@drawable/dark_orange_btn_back_2"/>
+
+</RelativeLayout>

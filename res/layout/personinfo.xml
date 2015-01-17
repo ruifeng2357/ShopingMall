@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlPersonInfoLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.damytech.yilebang.PersonInfoActivity" >
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:text="@string/PersonInfo_Title"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true" android:background="@drawable/titleback"
+            android:textColor="@android:color/white" android:gravity="center_vertical|left" android:paddingLeft="10px"
+            android:textSize="27px"/>
+
+    <RelativeLayout
+        android:id="@+id/rlPersonInfo_Body"
+        android:layout_width="fill_parent"
+        android:layout_height="680px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/soft_soft_gray" android:layout_below="@+id/textView">
+
+        <RelativeLayout
+            android:id="@+id/rlPersonInfo_UserName"
+            android:layout_width="450px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="25px"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/imgPersonInfo_UserIcon"
+                android:layout_width="26px"
+                android:layout_height="45px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/usericon" />
+
+            <EditText
+                android:id="@+id/txtPersonInfo_UserName"
+                android:layout_width="350px"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/imgPersonInfo_UserIcon"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="450px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlPersonInfo_UserName"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="30px"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/imgPersonInfo_KeyIcon"
+                android:layout_width="26px"
+                android:layout_height="45px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/keyicon" />
+
+            <EditText
+                android:id="@+id/txtPersonInfo_Password"
+                android:layout_width="350px"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/imgPersonInfo_KeyIcon"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnPersonInfo_Register"
+            android:layout_width="215px"
+            android:layout_height="50px"
+            android:layout_alignLeft="@+id/rlPersonInfo_UserName"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="30px"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            android:text="@string/PersonInfo_Register"
+            android:background="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/btnPersonInfo_Login"
+            android:layout_width="215px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15px"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="30px"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            android:text="@string/PersonInfo_Login"
+            android:background="@color/orange" />
+
+        <TextView
+            android:id="@+id/lblPersonInfo_ForgotPassword"
+            android:layout_width="120px"
+            android:layout_height="40px"
+            android:layout_alignLeft="@+id/btnPersonInfo_Register"
+            android:layout_below="@+id/btnPersonInfo_Register"
+            android:layout_marginTop="20px"
+            android:textSize="25px"
+            android:textColor="@color/gray"
+            android:gravity="left|center_vertical"
+            android:text="@string/PersonInfo_ForgotPassword" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPersonInfo_Footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_alignLeft="@+id/rlPersonInfo_Body"
+        android:layout_below="@+id/rlPersonInfo_Body"
+        android:background="@color/orange" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_gray" >
+            
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Left"
+                android:layout_width="4px"
+                android:layout_height="fill_parent" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Home"
+                android:layout_width="76px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Left"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Left"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgPersonInfo_Footer_Home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home" android:scaleType="fitCenter" android:padding="7px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Separate1"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Home"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Home"
+                android:background="@drawable/footerseparator" >
+                                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_BackArraw"
+                android:layout_width="104px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Separate1"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Separate1"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgPersonInfo_Footer_BackArraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/backarraw" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Separate2"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_BackArraw"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_BackArraw"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_MainMenu"
+                android:layout_width="100px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Separate2"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Separate2"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgPersonInfo_Footer_MainMenu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mainmenu" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Separate3"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_MainMenu"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_MainMenu"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Packet"
+                android:layout_width="90px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Separate3"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Separate3"
+                android:background="@color/dark_gray" >
+                
+                <ImageView 
+                    android:id="@+id/imgPersonInfo_Footer_Packet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/packet" android:scaleType="fitCenter" android:padding="7px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Separate4"
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_Packet"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_Packet"
+                android:background="@drawable/footerseparator" >
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_PersonInfo"
+                android:layout_width="90px"
+                android:layout_height="fill_parent"
+                android:background="@color/orange" android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+                
+                <ImageView 
+                    android:id="@+id/imgPersonInfo_Footer_PersonInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/personinfo" android:scaleType="fitCenter" android:padding="10px"/>
+                
+			</RelativeLayout>
+			
+            <RelativeLayout
+                android:id="@+id/rlPersonInfo_Footer_Right"
+                android:layout_width="4px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlPersonInfo_Footer_PersonInfo"
+                android:layout_alignBottom="@+id/rlPersonInfo_Footer_PersonInfo"
+                android:background="@color/dark_gray" >
+			</RelativeLayout>
+			            
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

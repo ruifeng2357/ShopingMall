@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlPreferentialMapMain">
+
+    <RelativeLayout android:id="@+id/rlTopBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:background="@drawable/preferential" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/imgTop_QRBar" android:layout_width="42px" android:layout_height="43px"
+                   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                   android:layout_marginRight="15px" android:src="@drawable/qrbar"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="680px" android:id="@+id/rlBody" android:layout_below="@+id/rlTopBar"
+            android:background="@color/soft_gray" android:paddingLeft="5px" android:paddingTop="5px"
+            android:paddingRight="5px" android:paddingBottom="5px">
+        <view android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              class="com.baidu.mapapi.MapView" android:id="@+id/viewBaiduMap"
+              android:layout_alignLeft="@+id/textView" android:layout_below="@+id/relativeLayout1"
+              android:layout_marginTop="10px"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="40px"
+                  android:id="@+id/textView" android:textColor="@color/black" android:textSize="30px"
+                  android:gravity="center_vertical" android:layout_alignParentLeft="false"
+                  android:layout_alignParentTop="false"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="40px"
+                  android:text="@string/Preferential_Address" android:id="@+id/textView1"
+                  android:textColor="@color/gray" android:textSize="26px" android:gravity="center_vertical"
+                  android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                  android:layout_below="@+id/textView"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:id="@+id/textView2" android:textColor="@color/gray" android:textSize="26px"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+                  android:layout_toRightOf="@+id/textView1" android:layout_below="@+id/textView"/>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="120px"
+                        android:background="@drawable/frameback" android:id="@+id/relativeLayout1"
+                        android:visibility="visible" android:layout_alignLeft="@+id/textView"
+                        android:layout_below="@+id/textView2">
+            <Button android:layout_width="100px" android:layout_height="35px" android:id="@+id/btnTypeGet"
+                    android:layout_alignParentLeft="true" android:layout_marginLeft="20px"
+                    android:layout_alignParentTop="true" android:layout_marginTop="15px"
+                    android:background="@drawable/share"/>
+            <Button android:layout_width="120px" android:layout_height="35px" android:id="@+id/btnFreeGet"
+                    android:background="@drawable/free_prefer" android:layout_toRightOf="@+id/btnTypeGet"
+                    android:layout_alignTop="@+id/btnTypeGet"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/PreferentialDet_Prefer" android:id="@+id/textView5"
+                      android:layout_alignParentLeft="true" android:layout_marginLeft="340px"
+                      android:layout_alignParentTop="true" android:layout_marginTop="10px"
+                      android:textColor="@color/gray" android:textSize="18px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/str_money_yuansymbol" android:id="@+id/textView4"
+                      android:textColor="@color/red" android:textSize="22px" android:layout_alignParentLeft="true"
+                      android:layout_marginLeft="330px" android:layout_below="@+id/textView5"
+                      android:visibility="invisible"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"
+                      android:id="@+id/txtChip" android:textColor="@color/red" android:textSize="22px"
+                      android:layout_toRightOf="@+id/textView4" android:layout_below="@+id/textView5"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/str_money_yuan" android:id="@+id/textView7" android:textColor="@color/red"
+                      android:textSize="22px" android:layout_toRightOf="@+id/txtChip"
+                      android:layout_below="@+id/textView5" android:visibility="invisible"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/PreferentialDet_PhoneNum" android:id="@+id/textView6"
+                      android:textColor="#666666" android:textSize="18px" android:layout_alignLeft="@+id/btnTypeGet"
+                      android:layout_alignParentTop="true" android:layout_marginTop="60px"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="0851-3662099" android:id="@+id/txtPhoneNum" android:textColor="@color/black"
+                      android:textSize="20px" android:layout_alignLeft="@+id/btnTypeGet"
+                      android:layout_below="@+id/textView6"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/PreferentialDet_TimeLine" android:id="@+id/textView7"
+                      android:textColor="#666666" android:textSize="18px" android:layout_alignParentLeft="true"
+                      android:layout_marginLeft="180px" android:layout_alignTop="@+id/textView6"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="11:00-15:00,16:00-20:00" android:id="@+id/txtTimeLine"
+                      android:textColor="@color/black" android:textSize="20px" android:layout_alignLeft="@+id/textView7"
+                      android:layout_below="@+id/textView6"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlBottomBar" android:layout_width="fill_parent" android:layout_height="60px"
+                    android:layout_alignLeft="@+id/rlTopBar" android:layout_below="@+id/rlBody"
+                    android:background="@color/orange">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="56px"
+                        android:layout_alignParentBottom="true" android:background="@color/dark_gray">
+            <RelativeLayout android:id="@+id/rlBottom_Left" android:layout_width="4px"
+                            android:layout_height="fill_parent"/>
+            <RelativeLayout android:id="@+id/rlBottom_Home" android:layout_width="76px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Left"
+                            android:layout_alignBottom="@+id/rlBottom_Left" android:background="@color/orange">
+                <ImageView android:id="@+id/imgBottom_Home" android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" android:layout_centerInParent="true"
+                           android:src="@drawable/home" android:padding="7px" android:scaleType="fitCenter"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlBottom_Separate1" android:layout_width="3px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Home"
+                            android:layout_alignBottom="@+id/rlBottom_Home"
+                            android:background="@drawable/footerseparator"/>
+            <RelativeLayout android:id="@+id/rlBottom_BackArraw" android:layout_width="104px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate1"
+                            android:layout_alignBottom="@+id/rlBottom_Separate1" android:background="@color/dark_gray">
+                <ImageView android:id="@+id/imgBottom_BackArraw" android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" android:layout_centerInParent="true"
+                           android:src="@drawable/backarraw" android:padding="10px" android:scaleType="fitCenter"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlBottom_Separate2" android:layout_width="3px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_BackArraw"
+                            android:layout_alignBottom="@+id/rlBottom_BackArraw"
+                            android:background="@drawable/footerseparator"/>
+            <RelativeLayout android:id="@+id/rlBottom_MainMenu" android:layout_width="100px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate2"
+                            android:layout_alignBottom="@+id/rlBottom_Separate2" android:background="@color/dark_gray">
+                <ImageView android:id="@+id/imgBottom_MainMenu" android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" android:layout_centerInParent="true"
+                           android:src="@drawable/mainmenu" android:scaleType="fitCenter" android:padding="10px"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlBottom_Separate3" android:layout_width="3px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_MainMenu"
+                            android:layout_alignBottom="@+id/rlBottom_MainMenu"
+                            android:background="@drawable/footerseparator"/>
+            <RelativeLayout android:id="@+id/rlBottom_Packet" android:layout_width="90px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Separate3"
+                            android:layout_alignBottom="@+id/rlBottom_Separate3" android:background="@color/dark_gray">
+                <ImageView android:id="@+id/imgBottom_Packet" android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" android:layout_centerInParent="true"
+                           android:src="@drawable/packet" android:padding="7px" android:scaleType="fitCenter"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlBottom_Separate4" android:layout_width="3px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_Packet"
+                            android:layout_alignBottom="@+id/rlBottom_Packet"
+                            android:background="@drawable/footerseparator"/>
+            <RelativeLayout android:id="@+id/rlBottom_PersonInfo" android:layout_width="90px"
+                            android:layout_height="fill_parent"
+                            android:background="@color/dark_gray" android:layout_alignParentRight="true"
+                            android:layout_alignParentLeft="false" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/imgBottom_PersonInfo" android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" android:layout_centerInParent="true"
+                           android:src="@drawable/personinfo" android:scaleType="fitCenter" android:padding="10px"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlBaseService_Footer_Right" android:layout_width="4px"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/rlBottom_PersonInfo"
+                            android:layout_alignBottom="@+id/rlBottom_PersonInfo"
+                            android:background="@color/dark_gray"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

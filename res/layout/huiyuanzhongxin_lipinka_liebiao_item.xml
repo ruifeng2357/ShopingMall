@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="430px"
+                android:layout_height="120px" android:id="@+id/rlItemMain" android:background="@color/white">
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:id="@+id/imageView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:src="@drawable/frameback_3" android:scaleType="fitXY" android:layout_margin="10px"/>
+    <TextView
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_Hao"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/imageView" android:textSize="20px"
+            android:layout_marginLeft="20px" android:textColor="#909090" android:layout_alignLeft="@+id/imageView"
+            android:layout_marginTop="10px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGiftCardNo" android:layout_toRightOf="@+id/textView"
+            android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView" android:textSize="20px"
+            android:layout_alignRight="@+id/imageView" android:layout_marginRight="10px"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_YuE"
+            android:id="@+id/textView4"
+            android:textSize="20px"
+            android:textColor="#909090"
+            android:layout_below="@+id/textView1" android:layout_alignRight="@+id/textView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBalance" android:layout_toRightOf="@+id/textView4"
+            android:textSize="20px"
+            android:layout_alignRight="@+id/txtGiftCardNo"
+            android:layout_alignTop="@+id/textView4"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNominalValue" android:layout_below="@+id/txtGiftCardNo"
+            android:maxWidth="410px" android:textSize="20px"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignRight="@+id/txtGiftCardNo"
+            android:layout_alignLeft="@+id/txtGiftCardNo"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_LiPinKa_MianZhi"
+            android:id="@+id/textView1"
+            android:layout_below="@+id/textView" android:textSize="20px" android:textColor="#909090"
+            android:background="@color/white"
+            android:layout_alignRight="@+id/textView"/>
+</RelativeLayout>

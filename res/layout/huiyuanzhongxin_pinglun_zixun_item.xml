@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="300px" android:id="@+id/rlItemMain">
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="290px"
+            android:id="@+id/imageView" android:layout_alignParentLeft="false" android:layout_alignParentTop="false"
+            android:layout_margin="5px" android:background="@drawable/frameback"/>
+    <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imgProduct" android:layout_alignLeft="@+id/imageView"
+            android:layout_alignTop="@+id/imageView" android:layout_marginLeft="25px" android:layout_marginTop="25px"
+            android:background="@drawable/bmp3"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="55px"
+            android:id="@+id/txtProductDesc" android:layout_toRightOf="@+id/imgProduct"
+            android:layout_alignTop="@+id/imgProduct" android:layout_alignRight="@+id/imageView"
+            android:layout_marginRight="15px" android:textSize="22px" android:layout_marginLeft="10px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.38 元"
+            android:id="@+id/txtProductCost"
+            android:layout_below="@+id/txtProductDesc" android:layout_alignLeft="@+id/txtProductDesc"
+            android:layout_alignBottom="@+id/imgProduct" android:gravity="center_vertical" android:singleLine="true"
+            android:textColor="@color/red" android:layout_alignRight="@+id/txtProductDesc" android:textSize="22px"/>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:id="@+id/imageView2" android:layout_alignLeft="@+id/imageView"
+            android:layout_below="@+id/imgProduct" android:layout_alignRight="@+id/imageView"
+            android:layout_marginTop="5px" android:layout_marginLeft="10px" android:layout_marginRight="10px"
+            android:background="@drawable/line_separator"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27px"
+            android:text="New Text"
+            android:id="@+id/txtConsultingContent"
+            android:layout_alignRight="@+id/txtProductDesc" android:textSize="22px"
+            android:layout_alignTop="@+id/textView2" android:textColor="#606060"
+            android:layout_toRightOf="@+id/textView2" android:singleLine="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_PingLun_ZiXun_NeiRong"
+            android:id="@+id/textView2" android:layout_alignLeft="@+id/imgProduct"
+            android:layout_below="@+id/imageView2" android:layout_marginTop="5px" android:textSize="22px"
+            android:background="@color/white"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-10-12 20:20:21"
+            android:id="@+id/txtConsultingTime" android:layout_alignLeft="@+id/imgProduct"
+            android:layout_below="@+id/txtConsultingContent" android:textSize="20px" android:textColor="#909090"
+            android:singleLine="true" android:layout_alignRight="@+id/txtProductDesc"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55px"
+            android:text="                            New Text"
+            android:id="@+id/txtYilebangReply"
+            android:textSize="22px"
+            android:textColor="#ff3300"
+            android:layout_below="@+id/imgProduct"
+            android:layout_alignRight="@+id/txtProductDesc" android:layout_alignLeft="@+id/textView5"
+            android:layout_alignTop="@+id/textView5"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HuiYuanZhongXin_JianYi_HuiFu"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/txtConsultingTime" android:layout_marginTop="10px" android:textSize="22px"
+            android:background="@color/white" android:textColor="#ff3300" android:textStyle="bold"
+            android:layout_alignLeft="@+id/txtConsultingTime"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-10-12 20:20:21"
+            android:id="@+id/txtReplyTime"
+            android:layout_below="@+id/txtYilebangReply" android:textSize="20px" android:textColor="#909090"
+            android:singleLine="true" android:layout_alignRight="@+id/txtProductDesc"
+            android:layout_marginTop="5px" android:layout_alignLeft="@+id/textView5"/>
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true" android:background="@drawable/preferential"
+            android:gravity="center_vertical|left" android:paddingLeft="10px"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton4"
+                android:layout_alignParentBottom="true" android:background="@color/orange" android:scaleType="fitCenter"
+                android:src="@drawable/home" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="93px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton5"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="10px" android:layout_toRightOf="@+id/imageButton9"/>
+        <ImageButton
+                android:layout_width="93px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/mainmenu" android:padding="10px" android:layout_toRightOf="@+id/imageButton10"/>
+        <ImageButton
+                android:layout_width="93px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton7"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/packet" android:padding="7px" android:layout_toRightOf="@+id/imageButton11"/>
+        <ImageButton
+                android:layout_width="93px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton8"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/personinfo" android:padding="10px" android:layout_toRightOf="@+id/imageButton12"/>
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imageButton4"/>
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton10"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imageButton5"/>
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton11"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imageButton6"/>
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton12"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imageButton7"/>
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="46px"
+            android:layout_height="47px"
+            android:id="@+id/imageView" android:layout_alignRight="@+id/textView"
+            android:layout_alignTop="@+id/textView" android:layout_marginTop="7px" android:layout_marginRight="7px"
+            android:background="@drawable/qrcode_back" android:padding="3px" android:scaleType="fitXY"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="85px" android:layout_below="@+id/textView" android:id="@+id/rlCouponName"
+            android:background="#f3f3f3">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50px"
+                android:text="New Text"
+                android:id="@+id/textView1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:gravity="center_vertical" android:paddingLeft="5px" android:paddingRight="5px"
+                android:textSize="36px"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Text"
+                android:id="@+id/textView2" android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1" android:gravity="center_vertical" android:paddingLeft="5px"
+                android:paddingRight="5px" android:textColor="#606060" android:textSize="22px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="270px" android:id="@+id/rlCouponContent" android:layout_below="@+id/rlCouponName">
+        <ImageView
+                android:layout_width="470px"
+                android:layout_height="200px"
+                android:id="@+id/imageView1" android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="true" android:layout_marginTop="10px"
+                android:layout_centerHorizontal="true" android:background="@drawable/frameback_2"
+                android:scaleType="fitXY" android:padding="5px"/>
+        <TextView
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:id="@+id/textView1"
+                android:textSize="32px" android:textColor="@color/red"
+                android:layout_below="@+id/imageView1" android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignParentBottom="true" android:gravity="center_vertical"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:id="@+id/textView2" android:layout_toRightOf="@+id/textView1"
+                android:layout_below="@+id/imageView1" android:layout_alignBottom="@+id/textView1" android:textSize="24px"
+                android:textColor="#909090" android:layout_marginLeft="5px" android:gravity="center_vertical"
+                android:singleLine="false"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" android:layout_toRightOf="@+id/textView2"
+                android:layout_below="@+id/imageView1" android:layout_alignBottom="@+id/textView2"
+                android:layout_alignRight="@+id/imageView1" android:textColor="#303030"
+                android:textSize="22px" android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/rlCouponRule" android:background="#f3f3f3"
+            android:layout_below="@+id/rlCouponContent" android:layout_above="@+id/rlFooter">
+        <ImageView
+                android:layout_width="121px"
+                android:layout_height="44px"
+                android:id="@+id/imageView2" android:layout_alignParentLeft="true" android:layout_marginLeft="95px"
+                android:layout_alignParentTop="true" android:layout_marginTop="15px"
+                android:background="@drawable/btn_share_coupon"/>
+        <ImageView
+                android:layout_width="161px"
+                android:layout_height="44px"
+                android:id="@+id/imageView3" android:layout_toRightOf="@+id/imageView2"
+                android:layout_alignTop="@+id/imageView2" android:background="@drawable/btn_free_collar_coupon"/>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4" android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+                android:layout_alignParentTop="true" android:layout_marginTop="80px" android:layout_marginRight="10px"
+                android:background="@drawable/line_separator"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_YouHuiJuan_ShiYongGuiZe"
+                android:id="@+id/textView4" android:layout_alignParentLeft="true" android:layout_marginLeft="15px"
+                android:layout_alignParentTop="true" android:layout_marginTop="100px" android:textSize="18px"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Text"
+                android:id="@+id/textView5" android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4" android:layout_marginRight="15px"
+                android:layout_marginBottom="10px" android:textColor="#606060" android:textSize="18px"
+                android:layout_marginTop="2px"/>
+    </RelativeLayout>
+
+</RelativeLayout>

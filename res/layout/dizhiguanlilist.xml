@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="440px"
+                android:layout_height="475px" android:background="@drawable/popupdlg_back" android:paddingLeft="15px"
+                android:paddingTop="20px" android:paddingRight="15px" android:paddingBottom="20px" android:id="@+id/rlDlgMain">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_receiver"
+            android:id="@+id/txtTitle" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:textSize="24px" android:textStyle="bold"
+            android:textColor="@color/black"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="350px"
+            android:id="@+id/listSelectReceiver" android:layout_alignLeft="@+id/txtTitle" android:layout_alignParentTop="true"
+            android:layout_marginTop="35px"/>
+    <TextView
+            android:layout_width="140px"
+            android:layout_height="35px"
+            android:text="@string/add_receiver"
+            android:id="@+id/lblSelectReceiver_Add"
+            android:layout_alignLeft="@+id/txtTitle" android:layout_alignParentTop="true"
+            android:layout_marginTop="400px" android:textSize="24px" android:textColor="@color/white"
+            android:gravity="center" android:background="@color/gray" android:layout_marginLeft="30px"/>
+    <TextView
+            android:layout_width="140px"
+            android:layout_height="35px"
+            android:text="@string/ok"
+            android:id="@+id/lblSelectReceiver_Ok" android:layout_alignRight="@+id/listSelectReceiver"
+            android:layout_alignTop="@+id/lblSelectReceiver_Add" android:background="@color/orange"
+            android:gravity="center" android:textColor="@color/white" android:textSize="24px"
+            android:layout_marginRight="30px"/>
+
+</RelativeLayout>

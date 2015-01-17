@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rlMain">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlHeader"
+            android:layout_alignParentBottom="false" android:layout_alignParentTop="true">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_2_Title"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true" android:background="@drawable/titleback"
+                android:textColor="@android:color/white" android:gravity="center_vertical|left" android:paddingLeft="10px"
+                android:textSize="27px"/>
+        <ImageButton
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnRefresh" android:layout_alignRight="@+id/textView"
+                android:layout_alignTop="@+id/textView" android:layout_alignBottom="@+id/textView"
+                android:scaleType="fitCenter" android:src="@drawable/refresh"
+                android:background="@android:color/transparent" android:padding="5px"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_above="@+id/rlFooter"
+            android:layout_below="@+id/rlHeader" android:background="#f3f3f3" android:fillViewport="false">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+                android:id="@+id/rlBody"
+                android:layout_alignParentBottom="true" android:layout_alignParentTop="true">
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView" android:background="@drawable/frameback"
+                    android:layout_marginLeft="5px" android:layout_marginTop="10px" android:layout_marginRight="5px"
+                    android:layout_marginBottom="10px"/>
+            <TextView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:text="1"
+                    android:id="@+id/txtStep1No" android:layout_alignParentLeft="false" android:layout_marginLeft="25px"
+                    android:layout_alignParentTop="false" android:layout_marginTop="40px"
+                    android:background="@drawable/gray_circle" android:gravity="center" android:textSize="24px"
+                    android:textColor="#606060"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_Step_1"
+                    android:id="@+id/txtStep1Name" android:layout_toRightOf="@+id/txtStep1No"
+                    android:layout_alignTop="@+id/txtStep1No" android:textSize="22px"
+                    android:layout_marginLeft="5px" android:layout_alignBottom="@+id/txtStep1No"
+                    android:gravity="center_vertical" android:textColor="#606060"/>
+            <TextView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:text="2"
+                    android:id="@+id/txtStep2No" android:layout_alignParentLeft="false" android:layout_marginLeft="170px"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/gray_circle" android:gravity="center" android:textSize="24px"
+                    android:textColor="@color/red" android:layout_alignTop="@+id/txtStep1No"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_Step_2"
+                    android:id="@+id/txtStep2Name" android:layout_toRightOf="@+id/txtStep2No"
+                    android:layout_alignTop="@+id/txtStep1No" android:textSize="22px"
+                    android:layout_marginLeft="5px" android:layout_alignBottom="@+id/txtStep1No"
+                    android:gravity="center_vertical" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:text="3"
+                    android:id="@+id/txtStep3No" android:layout_alignParentLeft="false" android:layout_marginLeft="330px"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/gray_circle" android:gravity="center" android:textSize="24px"
+                    android:textColor="#606060" android:layout_alignTop="@+id/txtStep1No"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_Step_3"
+                    android:id="@+id/txtStep3Name" android:layout_toRightOf="@+id/txtStep3No"
+                    android:layout_alignTop="@+id/txtStep1No" android:textSize="22px"
+                    android:layout_marginLeft="5px" android:layout_alignBottom="@+id/txtStep1No"
+                    android:gravity="center_vertical" android:textColor="#606060"/>
+
+            <TextView
+                    android:layout_width="405px"
+                    android:layout_height="40px"
+                    android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_2_ShouChi"
+                    android:id="@+id/txtUploadIDPhoto"
+                    android:layout_below="@+id/txtStep1No" android:layout_marginTop="30px"
+                    android:background="@drawable/gray_btn_back_2" android:textSize="22px" android:textColor="#606060"
+                    android:paddingLeft="15px" android:paddingRight="10px" android:gravity="center_vertical"
+                    android:layout_alignLeft="@+id/txtStep1No" android:layout_marginLeft="15px"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSelPhoto" android:background="@drawable/btn_empty"
+                    android:layout_alignTop="@+id/txtUploadIDPhoto" android:layout_alignLeft="@+id/txtUploadIDPhoto"
+                    android:layout_alignBottom="@+id/txtUploadIDPhoto"
+                    android:layout_alignRight="@+id/txtUploadIDPhoto"/>
+            <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView1"
+                    android:layout_alignTop="@+id/txtUploadIDPhoto" android:layout_alignBottom="@+id/txtUploadIDPhoto"
+                    android:layout_alignRight="@+id/txtUploadIDPhoto" android:textSize="22px"
+                    android:password="false" android:background="@android:color/transparent"
+                    android:scaleType="fitCenter" android:src="@drawable/directionicon" android:padding="10px"/>
+
+            <TextView
+                    android:layout_width="405px"
+                    android:layout_height="235px"
+                    android:id="@+id/textView9"
+                    android:layout_below="@+id/txtUploadIDPhoto" android:layout_marginTop="10px"
+                    android:background="@drawable/frameback_4" android:textSize="22px" android:textColor="#606060"
+                    android:paddingRight="10px" android:gravity="center_vertical"
+                    android:layout_alignLeft="@+id/txtUploadIDPhoto" android:paddingLeft="10px"/>
+            <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:id="@+id/imgIDPhoto"
+                    android:layout_alignTop="@+id/textView9" android:background="@color/white"
+                    android:layout_marginTop="17px"
+                    android:layout_marginLeft="102px" android:layout_alignLeft="@+id/textView9"
+                    android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px" android:layout_alignParentLeft="true"
+            android:id="@+id/rlFooter"
+            android:layout_alignParentBottom="true">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView28" android:layout_alignParentLeft="false"
+                android:layout_alignParentBottom="true" android:background="@color/orange"/>
+
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnBack"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitCenter"
+                android:src="@drawable/backarraw" android:padding="7px"/>
+        <ImageButton
+                android:layout_width="285px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton6"
+                android:layout_alignParentBottom="true" android:background="#333333"
+                android:padding="10px" android:layout_toRightOf="@+id/imageButton9"
+                />
+        <ImageButton
+                android:layout_width="96px"
+                android:layout_height="57px"
+                android:id="@+id/imgbtnAccount"
+                android:layout_alignParentBottom="true" android:background="@color/orange" android:scaleType="fitCenter"
+                android:src="@drawable/personinfo" android:padding="10px" android:layout_toRightOf="@+id/imageButton6"/>
+
+        <ImageButton
+                android:layout_width="3px"
+                android:layout_height="57px"
+                android:id="@+id/imageButton9"
+                android:layout_alignParentBottom="true" android:background="#333333" android:scaleType="fitXY"
+                android:src="@drawable/footerseparator" android:layout_toRightOf="@+id/imgbtnBack"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HuiYuanZhongXin_BangKe_ShenQing_2_WanChengShengQing"
+                android:id="@+id/txtSubmit"
+                android:layout_alignTop="@+id/imageButton6" android:layout_alignBottom="@+id/imageButton6"
+                android:layout_alignLeft="@+id/imageButton6" android:layout_alignRight="@+id/imageButton6"
+                android:layout_marginTop="7px" android:layout_marginBottom="7px" android:layout_marginRight="35px"
+                android:layout_marginLeft="20px" android:background="@drawable/orange_btn_back_3"
+                android:gravity="center" android:textSize="27px" android:textColor="@color/white"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNext" android:layout_alignTop="@+id/txtSubmit"
+                android:layout_alignLeft="@+id/txtSubmit" android:layout_alignBottom="@+id/txtSubmit"
+                android:layout_alignRight="@+id/txtSubmit" android:background="@drawable/btn_empty_orange3"/>
+    </RelativeLayout>
+</RelativeLayout>

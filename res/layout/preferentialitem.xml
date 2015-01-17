@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="270px" android:id="@+id/rlPreferItemMain" android:background="@color/white">
+
+    <ImageView
+            android:layout_width="240px"
+            android:layout_height="150px"
+            android:id="@+id/imgItemPic" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:src="@drawable/bmp5" android:scaleType="fitXY" android:layout_marginTop="10px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="AAAAAAAAAAAAAAAAAAAAAA"
+            android:id="@+id/txtTitle" android:layout_alignParentLeft="true" android:layout_marginLeft="250px"
+            android:layout_alignTop="@+id/imgItemPic" android:layout_alignParentRight="true"
+            android:textColor="@color/black" android:textSize="24px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="35px" android:text="@string/Preferential_Phone"
+              android:id="@+id/txtPhoneHead"
+              android:textColor="#888888"
+              android:textSize="18px" android:layout_alignLeft="@+id/txtTitle" android:layout_below="@+id/txtTitle"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:text="13765107062"
+            android:id="@+id/txtPhoneNum" android:layout_below="@+id/txtTitle"
+            android:layout_alignRight="@+id/txtTitle" android:textColor="#888888" android:textSize="18px"
+            android:layout_toRightOf="@+id/txtPhoneHead"/>
+    <Button
+            android:layout_width="118px"
+            android:layout_height="36px"
+            android:id="@+id/btnFreeBuy" android:layout_alignLeft="@+id/txtTitle"
+            android:layout_alignBottom="@+id/imgItemPic" android:background="@drawable/free_prefer"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90px" android:layout_alignLeft="@+id/imgItemPic"
+            android:layout_below="@+id/imgItemPic" android:background="@drawable/listitem_back"
+            android:id="@+id/rldetailinfo">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:text="@string/Preferential_Value"
+                android:id="@+id/textView" android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+                android:layout_alignParentTop="true" android:layout_marginTop="25px" android:gravity="center_vertical"
+                android:textColor="#888888" android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px"
+                  android:text="100.00" android:id="@+id/txtChip"
+                  android:gravity="center_vertical"
+                  android:textColor="#FF0000" android:layout_toRightOf="@+id/textView"
+                  android:layout_alignTop="@+id/textView" android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px"
+                  android:text="@string/str_money_yuan" android:id="@+id/textView2"
+                  android:gravity="center_vertical"
+                  android:textColor="#888888" android:layout_toRightOf="@+id/txtChip"
+                  android:layout_alignTop="@+id/textView" android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px"
+                  android:text="@string/Preferential_Date" android:id="@+id/textView3"
+                  android:gravity="center_vertical"
+                  android:textColor="#888888" android:layout_alignLeft="@+id/textView"
+                  android:layout_below="@+id/textView" android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px"
+                  android:text="AAAAAAAAAAA" android:id="@+id/txtDate" android:gravity="center_vertical"
+                  android:textColor="#888888"
+                  android:layout_toRightOf="@+id/textView3" android:layout_below="@+id/textView"
+                  android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px"
+                  android:text="@string/Preferential_Address" android:id="@+id/textView5" android:gravity="center_vertical"
+                  android:textColor="#888888"
+                  android:layout_alignLeft="@+id/textView" android:layout_below="@+id/textView3"
+                  android:textSize="14px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="20px" android:text="AAAAAAAAAAA"
+                  android:id="@+id/txtAddress" android:gravity="center_vertical" android:textColor="#888888"
+                  android:layout_toRightOf="@+id/textView" android:layout_below="@+id/textView3"
+                  android:textSize="14px"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignLeft="@+id/imgItemPic"
+            android:layout_alignParentBottom="true" android:background="@drawable/grayline"
+            android:layout_below="@+id/rldetailinfo">
+    </RelativeLayout>
+</RelativeLayout>

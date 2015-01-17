@@ -1,0 +1,8 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMyGoodFailLayout"
+    android:layout_width="345px"
+    android:layout_height="185px"
+    android:background="@drawable/logo" >
+
+</RelativeLayout>
